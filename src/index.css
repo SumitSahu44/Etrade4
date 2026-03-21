@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+body {
+  background-color: #ffffff;
+  color: #db2777;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --primary-pink: #D48282; /* Professional Dark Blush */
+  --light-bg: #FDF2F2;    /* Very Light Soft Pink for BG */
+  --dark-grey: #3D405B;   /* Professional Navy-Grey for Text */
+}
