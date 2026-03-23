@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Globe, ChevronDown, MessageSquare, Gavel, FileText, Briefcase, X } from 'lucide-react';
+import { Menu, Globe, ChevronDown, MessageSquare, Gavel, FileText, Briefcase, X, Image, Shield, Users, Calendar } from 'lucide-react';
 
 const TopBar = () => (
   <div className="h-[30px] bg-[#bc114a] border-b border-pink-100 flex items-center overflow-hidden">
@@ -18,8 +18,12 @@ export default function Header() {
     { name: 'e-Auction', path: '/auction', icon: <Gavel size={14}/> },
     { name: 'e-Quotation', path: '/quotation', icon: <MessageSquare size={14}/> },
     { name: 'Tender & Contract', path: '/tenders', icon: <FileText size={14}/> },
+    { name: 'Our Management', path: '/management', icon: <Users size={14}/> },
+    { name: 'Visit with Appointment', path: '/appointment', icon: <Calendar size={14}/> },
     { name: 'Circulars', path: '/circulars', icon: <Globe size={14}/> },
     { name: 'Blog', path: '/blog', icon: <MessageSquare size={14}/> },
+    { name: 'Media Gallery', path: '/media', icon: <Image size={14}/> },
+    { name: 'e-Trade T&C', path: '/terms', icon: <Shield size={14}/> },
     { name: 'Career Page', path: '/careers', icon: <Briefcase size={14}/> },
   ];
 

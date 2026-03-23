@@ -35,10 +35,23 @@ export const BuyerForm = () => {
         <InputGroup label="Name of the Buyer" name="buyer_name" />
         <InputGroup label="Title of the Business" name="business_title" />
         <InputGroup label="Mobile No." name="mobile" type="tel" />
-        <InputGroup label="Email ID" name="email" type="email" />
+        <InputGroup label="URL (if any)" name="url" placeholder="https://..." />
         
         <div className="md:col-span-2 lg:col-span-3">
            <InputGroup label="Address of the Business" name="address" />
+        </div>
+
+        {/* Category of Business - Dropdown */}
+        <div className="flex flex-col gap-2">
+          <label className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Category of Business</label>
+          <select name="category" onChange={handleChange} className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] outline-none text-sm font-bold text-[#4A4A4A]">
+             <option>Proprietorship</option>
+             <option>Partnership</option>
+             <option>LLP</option>
+             <option>Private Limited</option>
+             <option>Ltd.</option>
+             <option>Other</option>
+          </select>
         </div>
 
         {/* Nature of Business - Dropdown */}
@@ -51,9 +64,11 @@ export const BuyerForm = () => {
           </select>
         </div>
 
+        <InputGroup label="Membership in Chamber of Textile (if any)" name="membership" />
+
         {/* Upload Section */}
         <div className="flex flex-col gap-2">
-          <label className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Upload Documents (GST/MSME/LLP)</label>
+          <label className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] ml-1">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
           <div className="relative group">
             <input type="file" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
             <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#db2777] transition-all">
@@ -70,8 +85,13 @@ export const BuyerForm = () => {
              <option>Textile Raw Materials</option>
              <option>Textile Finished Products</option>
              <option>Textile Industrial Machineries</option>
+             <option>Textile Other Machineries</option>
              <option>Textile Spares</option>
           </select>
+        </div>
+
+        <div className="md:col-span-2 lg:col-span-3">
+           <InputGroup label="Description of the items to buy" name="description" placeholder="Specify details, quality, etc." />
         </div>
 
         <InputGroup label="Required Qty" name="qty" />
