@@ -29,7 +29,7 @@ export const Hero = () => {
             
             <h2 className="text-5xl lg:text-7xl font-black text-[#4A4A4A] leading-[1.05] tracking-tighter">
               Gateway to <br /> 
-              <span className="relative inline-block text-[#4A4A4A] italic">
+              <span className="relative inline-block text-[#4A4A4A]">
                 Excellence
               </span>
             </h2>
