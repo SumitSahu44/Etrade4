@@ -12,7 +12,7 @@ export const TenderSection = () => {
     <section className="w-[95%] mx-auto py-20 grid lg:grid-cols-2 gap-10">
       <div className="bg-[#4A4A4A] p-12 rounded-[3.5rem] text-white relative overflow-hidden">
         <Gavel className="absolute -right-10 -bottom-10 text-white/5" size={200} />
-        <h3 className="text-3xl font-black mb-8 italic uppercase tracking-tighter">e-Auction <span className="text-[#4A4A4A]">Portal</span></h3>
+        <h3 className="text-3xl font-black mb-8  uppercase tracking-tighter">e-Auction <span className="text-[#4A4A4A]">Portal</span></h3>
         <div className="space-y-4">
           {tenders.map(t => (
             <div key={t.id} className="bg-white/5 p-6 rounded-3xl border border-white/10 flex justify-between items-center group hover:bg-[#D48282]/20 transition-all cursor-pointer">

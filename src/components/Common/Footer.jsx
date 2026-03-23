@@ -14,7 +14,7 @@ export const Footer = () => (
         {/* Brand & Mission */}
         <div className="space-y-8">
           <Link to="/" className="flex flex-col group">
-            <h2 className="text-3xl font-black tracking-tighter uppercase italic">
+            <h2 className="text-3xl font-black tracking-tighter uppercase ">
               PAREKH <span className="text-[#bc114a]">e-TRADE</span>
             </h2>
             <p className="text-[10px] font-bold tracking-[0.4em] text-gray-500">MARKET (TEXTILE)</p>

@@ -4,8 +4,8 @@ import { Send } from 'lucide-react';
 export const TradeEnquiry = () => (
   <div className="min-h-screen py-16 bg-[#FDF2F2]/50">
     <div className="max-w-4xl mx-auto bg-white p-12 rounded-[3.5rem] shadow-2xl border border-pink-50">
-      <h2 className="text-3xl font-black text-[#db2777] uppercase italic border-b pb-6 border-pink-100">
-        Trade <span className="text-[#db2777]">Enquiry</span>
+      <h2 className="text-3xl font-black text-[#4A4A4A] uppercase  border-b pb-6 border-pink-100">
+        Trade <span className="text-[#4A4A4A]">Enquiry</span>
       </h2>
       <form className="grid md:grid-cols-2 gap-8 mt-10">
         <div className="flex flex-col gap-2">

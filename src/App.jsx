@@ -20,12 +20,13 @@ import { Auction } from './pages/Auction';
 import { Management } from './pages/Management'; // NEW
 import { Terms } from './pages/Terms'; // NEW
 import { AppointmentPage } from './pages/Appointment'; // NEW
-
+import ScrollToTop from './components/Common/ScrollToTop'; // NEW
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
         <Header />
+        <ScrollToTop />
         <SocialSidebar />
         <LiveChat />
         

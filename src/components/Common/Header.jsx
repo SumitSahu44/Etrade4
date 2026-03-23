@@ -34,7 +34,7 @@ export default function Header() {
         
         {/* Logo */}
         <Link to="/" className="flex flex-col group">
-          <h1 className="text-2xl font-black text-[#4A4A4A] leading-none group-hover:text-[#bc114a] transition-colors uppercase italic">
+          <h1 className="text-2xl font-black text-[#4A4A4A] leading-none group-hover:text-[#bc114a] transition-colors uppercase ">
             PAREKH <span className="text-[#bc114a] group-hover:text-[#4A4A4A]">e-TRADE</span>
           </h1>
           <p className="text-[10px] font-bold tracking-[0.3em] text-gray-400">MARKET (TEXTILE)</p>

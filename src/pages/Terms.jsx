@@ -57,7 +57,7 @@ export const Terms = () => {
         </div>
 
         <div className="mt-20 pt-12 border-t border-gray-100 text-center">
-           <p className="text-xs font-bold text-gray-400 uppercase tracking-widest italic">
+           <p className="text-xs font-bold text-gray-400 uppercase tracking-widest ">
               Last Updated: March 2026 | Hyderabad, TG
            </p>
         </div>

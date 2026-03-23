@@ -8,13 +8,13 @@ export const Quotation = () => (
         {/* Left Side: Info */}
         <div className="md:w-1/3">
           <div className="sticky top-32">
-            <span className="text-[#db2777] font-black text-xs uppercase tracking-[0.4em]">Fast Response</span>
-            <h2 className="text-4xl font-black text-[#db2777] mt-2 leading-tight uppercase italic">Request a <span className="text-[#db2777]">Quotation</span></h2>
+            <span className="text-[#4A4A4A] font-black text-xs uppercase tracking-[0.4em]">Fast Response</span>
+            <h2 className="text-4xl font-black text-[#4A4A4A] mt-2 leading-tight uppercase ">Request a <span className="text-[#4A4A4A]">Quotation</span></h2>
             <p className="mt-6 text-gray-500 text-sm leading-loose">
               Get customized pricing for bulk orders of raw materials, machinery, or industrial spares. Our team responds within 24 business hours.
             </p>
             <div className="mt-8 p-6 bg-white rounded-3xl border border-pink-100 shadow-sm">
-               <Info className="text-[#db2777] mb-2" size={20} />
+               <Info className="text-[#4A4A4A] mb-2" size={20} />
                <p className="text-[10px] font-bold text-gray-400 uppercase leading-relaxed">Note: Quotations are valid for 7 days from the date of issuance due to market fluctuations.</p>
             </div>
           </div>

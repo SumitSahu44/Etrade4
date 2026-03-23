@@ -16,7 +16,7 @@ export const Auction = () => {
             <Gavel size={32} />
           </div>
         </div>
-        <h1 className="text-5xl font-black uppercase tracking-tighter italic">Live <span className="text-[#4A4A4A]">e-Auction</span></h1>
+        <h1 className="text-5xl font-black uppercase tracking-tighter ">Live <span className="text-[#fff]">e-Auction</span></h1>
         <p className="mt-4 text-gray-400 font-bold uppercase tracking-[0.4em] text-[10px]">Real-time Bidding for Textile Assets</p>
       </section>
 
