@@ -21,7 +21,7 @@ import { Management } from './pages/Management'; // NEW
 import { Terms } from './pages/Terms'; // NEW
 import { AppointmentPage } from './pages/Appointment'; // NEW
 import ScrollToTop from './components/Common/ScrollToTop'; // NEW
-import Map from './pages/Map';
+import Map from './components/Home/Map'; // NEW
 function App() {
   return (
     <Router>

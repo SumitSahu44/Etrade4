@@ -55,7 +55,7 @@ export default function Header() {
 
             {/* Sub Text */}
             <p className="text-[10px] md:text-[11px] font-bold tracking-[0.3em] text-gray-400 uppercase">
-              Hyderabad
+              Hyderabad, TG
             </p>
 
           </div>
