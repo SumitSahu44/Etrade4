@@ -17,8 +17,8 @@ export const LiveChat = () => {
           >
             {/* Header */}
             <div className="bg-[#4A4A4A] p-6 text-white flex justify-between items-center">
-              <div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-[#4A4A4A]">Support</p>
+              <div className="flex-1">
+                <p className="text-[10px] font-black uppercase tracking-widest text-white/50">Support</p>
                 <h3 className="font-bold">e-Trade Assistant</h3>
               </div>
               <button onClick={() => setIsOpen(false)} className="hover:rotate-90 transition-transform">

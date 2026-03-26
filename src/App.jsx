@@ -5,22 +5,23 @@ import { Footer } from './components/Common/Footer'; // Fixed Import
 import { Home } from './pages/Home';
 import { BuyerPlatform } from './pages/BuyerPlatform';
 import { SellerPlatform } from './pages/SellerPlatform';
-import { ProductsPage } from './pages/ProductsPage';  
+import { ProductsPage } from './pages/ProductsPage';
 import { About } from './pages/About';
-import { Contact } from './pages/Contact';  
+import { Contact } from './pages/Contact';
 import { LiveChat } from './components/Common/LiveChat';
 import { SocialSidebar } from './components/Common/SocialSidebar';
 import { MediaGallery } from './pages/MediaGallery';
 import { Tenders } from './pages/Tender';
 import { Careers } from './pages/Careers';
 import { News } from './pages/News';
-import { TradeEnquiry } from './pages/TradeEnquiry';  
+import { TradeEnquiry } from './pages/TradeEnquiry';
 import { Quotation } from './pages/Quotation';
-import { Auction } from './pages/Auction';  
+import { Auction } from './pages/Auction';
 import { Management } from './pages/Management'; // NEW
 import { Terms } from './pages/Terms'; // NEW
 import { AppointmentPage } from './pages/Appointment'; // NEW
 import ScrollToTop from './components/Common/ScrollToTop'; // NEW
+import Map from './pages/Map';
 function App() {
   return (
     <Router>
@@ -29,7 +30,7 @@ function App() {
         <ScrollToTop />
         <SocialSidebar />
         <LiveChat />
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductsPage />} />
@@ -48,14 +49,15 @@ function App() {
           <Route path="/trade-enquiry" element={<TradeEnquiry />} />
           <Route path="/quotation" element={<Quotation />} />
           <Route path="/auction" element={<Auction />} />
+          <Route path="/textile-map" element={<Map />} />
         </Routes>
 
         <Footer />
 
         {/* Floating WhatsApp stays everywhere */}
-        <a 
-          href="https://wa.me/91XXXXXXXXXX" 
-          target="_blank" 
+        <a
+          href="https://wa.me/91XXXXXXXXXX"
+          target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-10 right-10 z-50 bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition-all border-4 border-white"
         >

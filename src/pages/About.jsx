@@ -6,7 +6,7 @@ export const About = () => (
     {/* Page Header */}
     <section className="py-24 bg-[#FDF2F2] text-center">
       <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-[#4A4A4A] font-black text-xs uppercase tracking-[0.6em]">Heritage Since 25 Years</motion.span>
-      <h1 className="text-6xl font-black text-[#4A4A4A] tracking-tighter mt-4 uppercase">About <span className="text-[#4A4A4A]">Parekh e-Trade</span></h1>
+      <h1 className="text-6xl font-black text-[#4A4A4A] tracking-tighter mt-4 uppercase">About <span className="text-[#4A4A4A] normal-case">Parekh e-Trade</span></h1>
       <div className="h-1.5 w-24 bg-[#D48282] mx-auto mt-6 rounded-full"></div>
     </section>
 

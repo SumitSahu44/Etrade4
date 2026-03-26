@@ -15,7 +15,7 @@ export const Footer = () => (
         <div className="space-y-8">
           <Link to="/" className="flex flex-col group">
             <h2 className="text-3xl font-black tracking-tighter uppercase ">
-              PAREKH <span className="text-[#bc114a]">e-TRADE</span>
+              PAREKH <span className="text-[#bc114a] normal-case">e-Trade</span>
             </h2>
             <p className="text-[10px] font-bold tracking-[0.4em] text-gray-500">MARKET (TEXTILE)</p>
           </Link>
@@ -33,7 +33,7 @@ export const Footer = () => (
 
         {/* e-Services & Platforms */}
         <div>
-          <h4 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#bc114a] mb-8">e-Services</h4>
+          <h4 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#bc114a] mb-8"><span className="normal-case">e-Services</span></h4>
           <ul className="grid gap-4 text-sm font-bold text-gray-400">
             <li><Link to="/auction" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> e-Auction Portal</Link></li>
             <li><Link to="/quotation" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> e-Quotation</Link></li>
@@ -96,7 +96,7 @@ export const Footer = () => (
            </p>
         </div>
         <div className="text-[10px] font-bold text-gray-600 uppercase tracking-[0.2em]">
-          © 2026 PAREKH e-TRADE MARKET (TEXTILE). ALL RIGHTS RESERVED.
+          © 2026 PAREKH <span className="normal-case">e-Trade</span> MARKET (TEXTILE). ALL RIGHTS RESERVED.
         </div>
       </div>
     </div>

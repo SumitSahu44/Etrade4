@@ -6,7 +6,7 @@ export const Management = () => {
     {
       name: "Mr. S. Parekh",
       role: "Managing Director",
-      bio: "Over 30 years of excellence in the global textile trade. Visionary behind PAREKH e-TRADE MARKET.",
+      bio: "Over 30 years of excellence in the global textile trade. Visionary behind PAREKH e-Trade MARKET.",
       icon: <Award className="text-white" size={30} />
     },
     {
@@ -31,9 +31,9 @@ export const Management = () => {
         <div>
           <h2 className="text-3xl font-black text-[#4A4A4A] uppercase tracking-tight">Our Core <span className="text-[#bc114a]">Values</span></h2>
           <p className="mt-6 text-gray-500 font-medium leading-[2]">
-            PAREKH e-TRADE MARKET (TEXTILE) is founded on the principles of transparency and efficiency. 
+            PAREKH e-Trade MARKET (TEXTILE) is founded on the principles of transparency and efficiency. 
             Our management team brings together decades of expertise to bridge the gap between buyers and sellers 
-            using state-of-the-art e-trade technology.
+            using state-of-the-art e-Trade technology.
           </p>
           <div className="grid grid-cols-2 gap-6 mt-10">
             <div className="flex gap-4 items-start">

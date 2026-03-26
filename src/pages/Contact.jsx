@@ -39,7 +39,7 @@ export const Contact = () => (
       {/* Appointment e-Form */}
       <div className="lg:col-span-2 bg-[#FDF2F2] p-12 rounded-[4rem] border border-pink-100">
         <h2 className="text-3xl font-black text-[#4A4A4A] mb-2">Book an <span className="text-[#4A4A4A]">Appointment</span></h2>
-        <p className="text-gray-400 text-sm font-bold uppercase tracking-widest mb-10">Visit our Official e-Trade Market</p>
+        <p className="text-gray-400 text-sm font-bold uppercase tracking-widest mb-10">Visit our Official <span className="normal-case">e-Trade</span> Market</p>
         
         <form className="grid md:grid-cols-2 gap-6">
           <input type="text" placeholder="Your Name" className="p-5 bg-white rounded-2xl outline-none focus:ring-2 focus:ring-[#D48282]/20 border border-transparent" />

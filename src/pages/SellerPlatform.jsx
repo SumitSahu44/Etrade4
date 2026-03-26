@@ -13,7 +13,7 @@ export const SellerPlatform = () => {
             <h2 className="text-3xl font-black text-slate-800">
               Seller's <span className="text-[#db2777]">Registration</span>
             </h2>
-            <p className="text-slate-500 font-bold mt-2">Fill all details to list on Parekh E-Trade</p>
+            <p className="text-slate-500 font-bold mt-2">Fill all details to list on Parekh e-Trade</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

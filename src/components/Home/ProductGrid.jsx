@@ -117,7 +117,7 @@ export const ProductGrid = () => {
             {/* Content Section */}
             <div className="p-7">
               <h4 className="text-[#4A4A4A] font-black text-xl leading-tight group-hover:text-[#4A4A4A] transition-colors">{p.title}</h4>
-              <p className="text-gray-400 text-[11px] mt-2 font-bold uppercase tracking-wider">Ready for e-Auction</p>
+              <p className="text-gray-400 text-[11px] mt-2 font-bold uppercase tracking-wider">Ready for <span className="normal-case">e-Auction</span></p>
               
               <div className="mt-5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="text-[#4A4A4A] text-[10px] font-black uppercase">View Details</span>

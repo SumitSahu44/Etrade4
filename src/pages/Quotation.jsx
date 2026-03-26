@@ -9,7 +9,7 @@ export const Quotation = () => (
         <div className="md:w-1/3">
           <div className="sticky top-32">
             <span className="text-[#4A4A4A] font-black text-xs uppercase tracking-[0.4em]">Fast Response</span>
-            <h2 className="text-4xl font-black text-[#4A4A4A] mt-2 leading-tight uppercase ">Request a <span className="text-[#4A4A4A]">Quotation</span></h2>
+            <h2 className="text-4xl font-black text-[#4A4A4A] mt-2 leading-tight uppercase ">Request an <span className="text-[#4A4A4A] normal-case">e-Quotation</span></h2>
             <p className="mt-6 text-gray-500 text-sm leading-loose">
               Get customized pricing for bulk orders of raw materials, machinery, or industrial spares. Our team responds within 24 business hours.
             </p>

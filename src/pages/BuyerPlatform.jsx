@@ -23,7 +23,7 @@ export const BuyerPlatform = () => {
 
       {/* Basic T&C Short Section */}
       <div className="max-w-4xl mx-auto mt-16 p-8 bg-white/50 rounded-[2rem] border border-pink-100 text-center">
-         <h4 className="text-[10px] font-black text-[#4A4A4A] uppercase tracking-widest mb-4">e-Trade Terms</h4>
+         <h4 className="text-[10px] font-black text-[#4A4A4A] uppercase tracking-widest mb-4"><span className="normal-case">e-Trade</span> Terms</h4>
          <p className="text-[11px] text-gray-400 leading-relaxed uppercase font-bold">
            All buyers must be verified by our authorized official. 
            Incomplete documents like GST or MSME will lead to rejection of trade inquiry.

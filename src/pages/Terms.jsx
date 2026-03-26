@@ -13,11 +13,11 @@ export const Terms = () => {
     },
     {
       title: "3. Documentation",
-      content: "All documents uploaded must be genuine. PAREKH e-TRADE reserves the right to verify documents with government portals like GSTN and MCA."
+      content: "All documents uploaded must be genuine. PAREKH e-Trade reserves the right to verify documents with government portals like GSTN and MCA."
     },
     {
       title: "4. Payment Terms",
-      content: "Payments must be made directly to the seller as per the contract generated post-auction. PAREKH e-TRADE acts as a discovery and facilitation platform."
+      content: "Payments must be made directly to the seller as per the contract generated post-auction. PAREKH e-Trade acts as a discovery and facilitation platform."
     }
   ];
 

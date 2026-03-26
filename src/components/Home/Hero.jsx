@@ -23,7 +23,7 @@ export const Hero = () => {
             <div className="flex items-center gap-2 mb-6">
               <span className="w-10 h-[1px] bg-[#4A4A4A]"></span>
               <span className="text-[#4A4A4A] font-black text-[10px] uppercase tracking-[0.4em]">
-                B2B Textile e-Trade
+                B2B Textile <span className="normal-case">e-Trade</span>
               </span>
             </div>
             

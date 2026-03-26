@@ -4,13 +4,13 @@ import { Gavel, Download, Clock, ShieldCheck } from 'lucide-react';
 export const Tenders = () => {
   const list = [
     { id: 'T-2026-001', title: 'Supply of 500 Tons Raw Cotton', date: '25 March 2026', type: 'Tender' },
-    { id: 'A-2026-042', title: 'E-Auction: Spinning Machinery Set', date: 'LIVE NOW', type: 'Auction' },
+    { id: 'A-2026-042', title: 'e-Auction: Spinning Machinery Set', date: 'LIVE NOW', type: 'Auction' },
   ];
 
   return (
     <div className="min-h-screen bg-white pb-20">
       <div className="bg-[#bc114a] py-20 text-center text-white">
-        <h1 className="text-5xl font-black uppercase tracking-tighter ">e-Auction & <span className="opacity-70">Tenders</span></h1>
+        <h1 className="text-5xl font-black uppercase tracking-tighter "><span className="normal-case">e-Auction</span> & <span className="opacity-70">Tenders</span></h1>
         <p className="mt-4 text-pink-100 font-bold uppercase tracking-widest text-xs">Official Bidding Portal</p>
       </div>
 
