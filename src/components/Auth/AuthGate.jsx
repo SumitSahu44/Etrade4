@@ -61,7 +61,7 @@ export const AuthGate = ({ children, platformName }) => {
           </button>
         </div>
 
-        <p className="mt-10 text-[10px] text-gray-300 font-bold uppercase tracking-widest">
+        <p className="mt-10 text-[10px] text-gray-500 font-bold uppercase tracking-widest">
           PAREKH <span className="normal-case">e-Trade</span> SECURITY
         </p>
       </div>

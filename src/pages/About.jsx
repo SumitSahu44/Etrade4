@@ -19,7 +19,7 @@ export const About = () => (
         </p>
         <div className="p-8 bg-[#4A4A4A] text-white rounded-[3rem] shadow-xl">
           <h4 className="text-[#4A4A4A] font-black uppercase text-xs mb-2">Our Mission</h4>
-          <p className="text-sm text-gray-300">To empower every textile manufacturer and buyer with real-time trading data and authorized official verification.</p>
+          <p className="text-sm text-gray-500">To empower every textile manufacturer and buyer with real-time trading data and authorized official verification.</p>
         </div>
       </div>
       <div className="relative">
