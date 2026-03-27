@@ -89,12 +89,12 @@ export const Footer = () => (
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center mt-12 gap-8">
-        <div className="flex items-center gap-6">
+        {/* <div className="flex items-center gap-6">
            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Google_Maps_icon_%282020%29.svg" className="w-8 h-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all" alt="Google Maps" />
            <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">
              SEO Friendly | All Browser Support | Mobile Responsive
            </p>
-        </div>
+        </div> */}
         <div className="text-[10px] font-bold text-gray-600 uppercase tracking-[0.2em]">
           © 2026 PAREKH <span className="normal-case">e-Trade</span> MARKET (TEXTILE). ALL RIGHTS RESERVED.
         </div>

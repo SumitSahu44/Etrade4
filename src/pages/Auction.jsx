@@ -63,7 +63,7 @@ export const Auction = () => {
       {/* Safety Notice */}
       <div className="max-w-4xl mx-auto mt-20 p-8 bg-[#FDF2F2] rounded-[3rem] border border-pink-100 flex items-center gap-6">
         <ShieldCheck className="text-[#4A4A4A] shrink-0" size={40} />
-        <p className="text-[11px] font-bold text-gray-500 leading-loose uppercase tracking-wider">
+        <p className="text-[11px] font-bold text-gray-500 leading-loose tracking-wider">
           All bidders must have a verified security deposit and valid authorized official code to participate in the live auction. Please read our <span className="text-[#4A4A4A] underline cursor-pointer">e-Trade T&C</span> before bidding.
         </p>
       </div>
