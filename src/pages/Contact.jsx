@@ -8,7 +8,7 @@ export const Contact = () => (
       {/* Contact Info Cards */}
       <div className="lg:col-span-1 space-y-6">
         <div className="bg-[#4A4A4A] p-10 rounded-[3rem] text-white">
-          <h3 className="text-2xl font-black mb-8 text-[#4A4A4A]">Get In Touch</h3>
+          <h3 className="text-2xl font-extrabold mb-8 text-[#4A4A4A]">Get In Touch</h3>
           <div className="space-y-8">
             <div className="flex gap-4">
               <MapPin className="text-[#4A4A4A] shrink-0" />
@@ -38,8 +38,8 @@ export const Contact = () => (
 
       {/* Appointment e-Form */}
       <div className="lg:col-span-2 bg-[#FDF2F2] p-12 rounded-[4rem] border border-pink-100">
-        <h2 className="text-3xl font-black text-[#4A4A4A] mb-2">Book an <span className="text-[#4A4A4A]">Appointment</span></h2>
-        <p className="text-gray-400 text-sm font-bold uppercase tracking-widest mb-10">Visit our Official <span className="normal-case">e-Trade</span> Market</p>
+        <h2 className="text-3xl font-extrabold text-[#4A4A4A] mb-2">Book an <span className="text-[#4A4A4A]">Appointment</span></h2>
+        <p className="text-gray-400 text-sm font-bold uppercase tracking-wider mb-10">Visit our Official <span className="normal-case">e-Trade</span> Market</p>
         
         <form className="grid md:grid-cols-2 gap-6">
           <input type="text" placeholder="Your Name" className="p-5 bg-white rounded-2xl outline-none focus:ring-2 focus:ring-[#D48282]/20 border border-transparent" />
@@ -52,7 +52,7 @@ export const Contact = () => (
              <option>Machinery Inspection</option>
           </select>
           <textarea placeholder="Tell us more about your visit" className="md:col-span-2 p-5 bg-white rounded-3xl h-32 outline-none"></textarea>
-          <button className="md:col-span-2 bg-[#D48282] text-white py-5 rounded-full font-black uppercase tracking-widest hover:bg-[#4A4A4A] transition-all shadow-xl shadow-pink-100">
+          <button className="md:col-span-2 bg-[#D48282] text-white py-5 rounded-full font-extrabold uppercase tracking-wider hover:bg-[#4A4A4A] transition-all shadow-xl shadow-pink-100">
             Confirm Appointment Request
           </button>
         </form>

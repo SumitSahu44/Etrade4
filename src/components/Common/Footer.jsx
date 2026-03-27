@@ -10,14 +10,14 @@ export const Footer = () => (
 
     <div className="max-w-[95%] mx-auto px-6 relative z-10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 pb-16 border-b border-white/5">
-        
+
         {/* Brand & Mission */}
         <div className="space-y-8">
           <Link to="/" className="flex flex-col group">
-            <h2 className="text-3xl font-black tracking-tighter uppercase ">
+            <h2 className="text-3xl font-extrabold er uppercase ">
               PAREKH <span className="text-[#bc114a] normal-case">e-Trade</span>
             </h2>
-            <p className="text-[10px] font-bold tracking-[0.4em] text-gray-500">MARKET (TEXTILE)</p>
+            <p className="text-sm font-bold tracking-[0.4em] text-gray-500">MARKET (TEXTILE)</p>
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed font-medium">
             India's premier B2B marketplace for the textile industry. Empowering manufacturers, wholesalers, and retailers through transparent digital trade solutions.
@@ -33,7 +33,7 @@ export const Footer = () => (
 
         {/* e-Services & Platforms */}
         <div>
-          <h4 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#bc114a] mb-8"><span className="normal-case">e-Services</span></h4>
+          <h4 className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#bc114a] mb-8"><span className="normal-case">e-Services</span></h4>
           <ul className="grid gap-4 text-sm font-bold text-gray-400">
             <li><Link to="/auction" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> e-Auction Portal</Link></li>
             <li><Link to="/quotation" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> e-Quotation</Link></li>
@@ -46,7 +46,7 @@ export const Footer = () => (
 
         {/* Quick Links */}
         <div>
-          <h4 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#bc114a] mb-8">Company</h4>
+          <h4 className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#bc114a] mb-8">Company</h4>
           <ul className="grid grid-cols-2 gap-4 text-sm font-bold text-gray-400">
             <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
             <li><Link to="/management" className="hover:text-white transition-colors">Management</Link></li>
@@ -56,34 +56,34 @@ export const Footer = () => (
             <li><Link to="/media" className="hover:text-white transition-colors">Media Gallery</Link></li>
             <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             <li><Link to="/appointment" className="hover:text-white transition-colors">Appointment</Link></li>
-            <li className="col-span-2 mt-2"><Link to="/terms" className="text-[#bc114a] flex items-center gap-2 hover:underline"><ShieldCheck size={16}/> e-Trade T&C</Link></li>
+            <li className="col-span-2 mt-2"><Link to="/terms" className="text-[#bc114a] flex items-center gap-2 hover:underline"><ShieldCheck size={16} /> e-Trade T&C</Link></li>
           </ul>
         </div>
 
         {/* Contact & Map Snippet */}
         <div className="space-y-8">
           <div>
-            <h4 className="text-[11px] font-black uppercase tracking-[0.3em] text-[#bc114a] mb-6">Headquarters</h4>
+            <h4 className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#bc114a] mb-6">Headquarters</h4>
             <div className="space-y-4">
               <div className="flex gap-4 items-start">
                 <MapPin className="text-[#bc114a] shrink-0" size={18} />
-                <p className="text-xs font-medium text-gray-400 leading-relaxed uppercase">Hyderabad, Telangana <br /> 500001, India</p>
+                <p className="text-sm font-medium text-gray-400 leading-relaxed uppercase">Hyderabad, Telangana <br /> 500001, India</p>
               </div>
               <div className="flex gap-4 items-center">
                 <Mail className="text-[#bc114a] shrink-0" size={18} />
-                <p className="text-xs font-medium text-gray-400 transition-colors hover:text-white cursor-pointer">e-trade@parekhtrade.com</p>
+                <p className="text-sm font-medium text-gray-400 transition-colors hover:text-white cursor-pointer">e-trade@parekhtrade.com</p>
               </div>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-2">
-             <div className="h-20 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center justify-center group cursor-pointer hover:bg-white/10 transition-all">
-                <Globe size={20} className="text-[#bc114a] mb-2" />
-                <span className="text-[9px] font-black uppercase tracking-tighter">India Map</span>
-             </div>
-             <div className="h-20 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center justify-center group cursor-pointer hover:bg-white/10 transition-all">
-                <Phone size={20} className="text-[#bc114a] mb-2" />
-                <span className="text-[9px] font-black uppercase tracking-tighter">Live Chat</span>
-             </div>
+            <div className="h-20 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center justify-center group cursor-pointer hover:bg-white/10 transition-all">
+              <Globe size={20} className="text-[#bc114a] mb-2" />
+              <span className="text-[9px] font-extrabold uppercase er">India Map</span>
+            </div>
+            <div className="h-20 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center justify-center group cursor-pointer hover:bg-white/10 transition-all">
+              <Phone size={20} className="text-[#bc114a] mb-2" />
+              <span className="text-[9px] font-extrabold uppercase er">Live Chat</span>
+            </div>
           </div>
         </div>
       </div>
@@ -91,11 +91,11 @@ export const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between items-center mt-12 gap-8">
         {/* <div className="flex items-center gap-6">
            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Google_Maps_icon_%282020%29.svg" className="w-8 h-8 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all" alt="Google Maps" />
-           <p className="text-[10px] font-black text-gray-500 uppercase tracking-widest">
+           <p className="text-sm font-extrabold text-gray-500 uppercase tracking-wider">
              SEO Friendly | All Browser Support | Mobile Responsive
            </p>
         </div> */}
-        <div className="text-[10px] font-bold text-gray-600 uppercase tracking-[0.2em]">
+        <div className="text-sm font-bold text-gray-600 uppercase ">
           © 2026 PAREKH <span className="normal-case">e-Trade</span> MARKET (TEXTILE). ALL RIGHTS RESERVED.
         </div>
       </div>

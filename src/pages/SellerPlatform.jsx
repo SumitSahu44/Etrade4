@@ -4,13 +4,13 @@ import { Upload, Eye, Send } from 'lucide-react';
 
 export const SellerPlatform = () => {
   return (
-    <div className="py-12 bg-[#FFF0F5]/30 min-h-screen font-sans">
+    <div className="py-12 bg-[#FFF0F5]/30 min-h-screen">
       <AuthGate platformName="SELLER'S PLATFORM">
         <div className="max-w-5xl mx-auto bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-pink-100">
           
           {/* Header */}
           <div className="mb-10 border-b-2 border-pink-50 pb-6">
-            <h2 className="text-3xl font-black text-slate-800">
+            <h2 className="text-3xl font-extrabold text-slate-800">
               Seller's <span className="text-[#db2777]">Registration</span>
             </h2>
             <p className="text-slate-500 font-bold mt-2">Fill all details to list on Parekh e-Trade</p>
@@ -20,7 +20,7 @@ export const SellerPlatform = () => {
             
             {/* Official Section */}
             <div className="flex flex-col gap-2">
-              <label className="text-xs font-bold text-slate-600 uppercase tracking-normal">Authorized Official Name</label>
+              <label className="text-sm font-bold text-slate-600 uppercase tracking-normal">Authorized Official Name</label>
               <input 
                 type="text" 
                 placeholder="Name of Official"
@@ -29,7 +29,7 @@ export const SellerPlatform = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="text-xs font-bold text-slate-600 uppercase tracking-normal">Code No.</label>
+              <label className="text-sm font-bold text-slate-600 uppercase tracking-normal">Code No.</label>
               <input 
                 type="text" 
                 placeholder="Official Code"
@@ -53,7 +53,7 @@ export const SellerPlatform = () => {
 
             {/* Dropdown Section */}
             <div className="md:col-span-2">
-              <label className="text-xs font-bold text-slate-600 uppercase mb-2 block">Textile Items to Sell</label>
+              <label className="text-sm font-bold text-slate-600 uppercase mb-2 block">Textile Items to Sell</label>
               <select className="w-full p-4 bg-slate-600 text-white rounded-2xl outline-none font-bold cursor-pointer">
                 <option>Textile Raw Materials</option>
                 <option>Textile Finished Products</option>
@@ -75,16 +75,16 @@ export const SellerPlatform = () => {
             {/* Upload Area */}
             <div className="flex items-center gap-4 p-4 border-2 border-dashed border-pink-200 rounded-2xl bg-pink-50/30 hover:bg-pink-50 cursor-pointer transition-all">
                <Upload className="text-[#db2777]" />
-               <span className="text-xs font-black text-[#db2777] uppercase">Upload Documents (GST/CIN/MSME)</span>
+               <span className="text-sm font-extrabold text-[#db2777] uppercase">Upload Documents (GST/CIN/MSME)</span>
             </div>
           </div>
 
           {/* Buttons */}
           <div className="mt-12 flex flex-col md:flex-row gap-4 justify-center">
-             <button className="flex items-center justify-center gap-2 bg-slate-100 text-slate-700 px-12 py-4 rounded-full font-black uppercase text-xs hover:bg-slate-200 transition-all">
+             <button className="flex items-center justify-center gap-2 bg-slate-100 text-slate-700 px-12 py-4 rounded-full font-extrabold uppercase text-sm hover:bg-slate-200 transition-all">
                <Eye size={16} /> Preview
              </button>
-             <button className="flex items-center justify-center gap-2 bg-[#db2777] text-white px-12 py-4 rounded-full font-black uppercase text-xs shadow-lg shadow-pink-200 hover:bg-[#be185d] transition-all">
+             <button className="flex items-center justify-center gap-2 bg-[#db2777] text-white px-12 py-4 rounded-full font-extrabold uppercase text-sm shadow-lg shadow-pink-200 hover:bg-[#be185d] transition-all">
                <Send size={16} /> Submit Listing
              </button>
           </div>

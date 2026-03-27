@@ -10,8 +10,8 @@ export const Tenders = () => {
   return (
     <div className="min-h-screen bg-white pb-20">
       <div className="bg-[#bc114a] py-20 text-center text-white">
-        <h1 className="text-5xl font-black uppercase tracking-tighter "><span className="normal-case">e-Auction</span> & <span className="opacity-70">Tenders</span></h1>
-        <p className="mt-4 text-pink-100 font-bold uppercase tracking-widest text-xs">Official Bidding Portal</p>
+        <h1 className="text-5xl font-extrabold uppercase er "><span className="normal-case">e-Auction</span> & <span className="opacity-70">Tenders</span></h1>
+        <p className="mt-4 text-pink-100 font-bold uppercase tracking-wider text-sm">Official Bidding Portal</p>
       </div>
 
       <div className="max-w-6xl mx-auto mt-[-50px] grid gap-8 px-6">
@@ -22,13 +22,13 @@ export const Tenders = () => {
                 {item.type === 'Auction' ? <Gavel /> : <ShieldCheck />}
               </div>
               <div>
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">{item.id}</span>
-                <h3 className="text-xl font-black text-[#4A4A4A]">{item.title}</h3>
+                <span className="text-sm font-bold text-gray-400 uppercase tracking-wider">{item.id}</span>
+                <h3 className="text-xl font-extrabold text-[#4A4A4A]">{item.title}</h3>
               </div>
             </div>
             <div className="flex items-center gap-6 mt-4 md:mt-0">
               <div className="text-right">
-                <p className="text-[10px] font-bold text-gray-400 uppercase">Closing Date</p>
+                <p className="text-sm font-bold text-gray-400 uppercase">Closing Date</p>
                 <p className="font-bold text-[#4A4A4A]">{item.date}</p>
               </div>
               <button className="bg-[#4A4A4A] text-white p-4 rounded-2xl hover:bg-black transition-all">

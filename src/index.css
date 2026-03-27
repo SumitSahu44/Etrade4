@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 @import "tailwindcss";
 
+/* Marquee Animation */
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -15,17 +18,43 @@
   animation: marquee 20s linear infinite;
 }
 
-body {
-  background-color: #ffffff;
-  color: #db2777;
-  font-family: 'Inter', sans-serif;
-}
-
+/* Root Colors */
 :root {
   --primary-pink: #D48282;
-  /* Professional Dark Blush */
   --light-bg: #FDF2F2;
-  /* Very Light Soft Pink for BG */
   --dark-grey: #3D405B;
-  /* Professional Navy-Grey for Text */
+}
+
+/* Body Styling */
+body {
+  background-color: #ffffff;
+  color: var(--dark-grey);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings - More Premium */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* Text Elements */
+p,
+span,
+div,
+a,
+li,
+button,
+input,
+select,
+textarea {
+  font-family: 'Inter', sans-serif;
 }

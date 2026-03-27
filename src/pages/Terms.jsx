@@ -25,29 +25,29 @@ export const Terms = () => {
     <div className="min-h-screen bg-white py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-4">
-           <Shield className="text-[#bc114a]" size={32} />
-           <span className="text-[#bc114a] font-black uppercase tracking-widest text-xs">Legal Compliance</span>
+          <Shield className="text-[#bc114a]" size={32} />
+          <span className="text-[#bc114a] font-extrabold uppercase tracking-wider text-sm">Legal Compliance</span>
         </div>
-        <h1 className="text-4xl font-black text-[#4A4A4A]  tracking-tighter mb-8">
-           e-Trade <span className="text-[#bc114a]">Terms & Conditions</span>
+        <h1 className="text-4xl font-extrabold text-[#4A4A4A]  er mb-8">
+          e-Trade <span className="text-[#bc114a]">Terms & Conditions</span>
         </h1>
-        
+
         <div className="bg-pink-50/50 p-8 rounded-[2rem] border border-pink-100 mb-12">
-           <div className="flex gap-4">
-              <AlertCircle className="text-[#bc114a] shrink-0" />
-              <p className="text-sm font-medium text-gray-600 leading-relaxed">
-                 Please read these terms carefully before registering on the Buyer or Seller platforms. 
-                 By using our services, you agree to abide by the trading norms set by PAREKH e-TRADE MARKET (TEXTILE).
-              </p>
-           </div>
+          <div className="flex gap-4">
+            <AlertCircle className="text-[#bc114a] shrink-0" />
+            <p className="text-sm font-medium text-gray-600 leading-relaxed">
+              Please read these terms carefully before registering on the Buyer or Seller platforms.
+              By using our services, you agree to abide by the trading norms set by PAREKH e-TRADE MARKET (TEXTILE).
+            </p>
+          </div>
         </div>
 
         <div className="space-y-12">
           {sections.map((section, i) => (
             <div key={i} className="group">
-              <h3 className="text-xl font-black text-[#4A4A4A] mb-4 flex items-center gap-3">
-                 <CheckCircle size={18} className="text-[#bc114a]" />
-                 {section.title}
+              <h3 className="text-xl font-extrabold text-[#4A4A4A] mb-4 flex items-center gap-3">
+                <CheckCircle size={18} className="text-[#bc114a]" />
+                {section.title}
               </h3>
               <p className="text-gray-500 font-medium leading-loose pl-8">
                 {section.content}
@@ -57,9 +57,9 @@ export const Terms = () => {
         </div>
 
         <div className="mt-20 pt-12 border-t border-gray-100 text-center">
-           <p className="text-xs font-bold text-gray-400 uppercase tracking-widest ">
-              Last Updated: March 2026 | Hyderabad, TG
-           </p>
+          <p className="text-sm font-bold text-gray-400 uppercase tracking-wider ">
+            Last Updated: March 2026 | Hyderabad, TG
+          </p>
         </div>
       </div>
     </div>

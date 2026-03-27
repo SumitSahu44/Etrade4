@@ -4,7 +4,7 @@ import { Menu, Globe, ChevronDown, MessageSquare, Gavel, FileText, Briefcase, X,
 
 const TopBar = () => (
   <div className="h-[30px] bg-[#bc114a] border-b border-pink-100 flex items-center overflow-hidden">
-    <div className="animate-marquee whitespace-nowrap text-[12px] font-black text-[#ffffff] uppercase tracking-widest">
+    <div className="animate-marquee whitespace-nowrap text-sm font-extrabold text-[#ffffff] uppercase tracking-wider">
       ✨ Parekh e-Trade Market (Textile) | 📞 CALL: +91-XXXXX-XXXXX | 🏢 OFFICE: HYDERABAD, TG | 🚀 JOIN THE NEXT <span className="normal-case text-white underline">e-Auction</span> LIVE!
     </div>
   </div>
@@ -46,7 +46,7 @@ export default function Header() {
           <div className="flex flex-col leading-tight">
 
             {/* Main Title */}
-            <h1 className="text-xl md:text-2xl font-black text-[#4A4A4A] leading-none uppercase group-hover:text-[#bc114a] transition-colors">
+            <h1 className="text-xl md:text-2xl font-extrabold text-[#4A4A4A] leading-none uppercase group-hover:text-[#bc114a] transition-colors">
               PAREKH{" "}
               <span className="text-[#bc114a] group-hover:text-[#4A4A4A] normal-case">
                 e-Trade
@@ -54,7 +54,7 @@ export default function Header() {
             </h1>
 
             {/* Sub Text */}
-            <p className="text-[10px] md:text-[11px] font-bold tracking-[0.3em] text-gray-400 uppercase">
+            <p className="text-sm md:text-sm font-bold tracking-[0.3em] text-gray-400 uppercase">
               Hyderabad, TG
             </p>
 
@@ -62,7 +62,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-8 text-[11px] font-black uppercase text-[#4A4A4A] tracking-wider">
+        <div className="hidden lg:flex items-center gap-8 text-sm font-extrabold uppercase text-[#4A4A4A] tracking-wider">
           <Link to="/" className="hover:text-[#bc114a] transition-all">Home</Link>
           <Link to="/about" className="hover:text-[#bc114a] transition-all">About Us</Link>
           <Link to="/products" className="hover:text-[#bc114a] transition-all whitespace-nowrap">Products & Services</Link>
@@ -91,7 +91,7 @@ export default function Header() {
 
         {/* Action Buttons */}
         <div className="flex items-center gap-3">
-          <Link to="/trade-enquiry" className="hidden md:flex items-center gap-2 bg-[#bc114a] text-white px-6 py-3 rounded-full text-[10px] font-black tracking-widest hover:bg-black transition-all shadow-xl shadow-[#bc114a]/20">
+          <Link to="/trade-enquiry" className="hidden md:flex items-center gap-2 bg-[#bc114a] text-white px-6 py-3 rounded-full text-sm font-extrabold tracking-wider hover:bg-black transition-all shadow-xl shadow-[#bc114a]/20">
             TRADE ENQUIRY
           </Link>
 
@@ -104,13 +104,13 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b shadow-2xl p-6 flex flex-col gap-4 text-sm font-bold uppercase tracking-widest text-[#4A4A4A]">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b shadow-2xl p-6 flex flex-col gap-4 text-sm font-bold uppercase tracking-wider text-[#4A4A4A]">
           <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
           <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <Link to="/products" onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
           <div className="h-px bg-gray-100 my-2" />
           {services.map(s => (
-            <Link key={s.name} to={s.path} onClick={() => setIsMobileMenuOpen(false)} className="text-[#bc114a] text-xs">
+            <Link key={s.name} to={s.path} onClick={() => setIsMobileMenuOpen(false)} className="text-[#bc114a] text-sm">
               <span className="normal-case">{s.name}</span>
             </Link>
           ))}

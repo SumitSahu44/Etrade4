@@ -18,7 +18,7 @@ export const LiveChat = () => {
             {/* Header */}
             <div className="bg-[#4A4A4A] p-6 text-white flex justify-between items-center">
               <div className="flex-1">
-                <p className="text-[10px] font-black uppercase tracking-widest text-white/50">Support</p>
+                <p className="text-sm font-extrabold uppercase tracking-wider text-white/50">Support</p>
                 <h3 className="font-bold">e-Trade Assistant</h3>
               </div>
               <button onClick={() => setIsOpen(false)} className="hover:rotate-90 transition-transform">
@@ -27,7 +27,7 @@ export const LiveChat = () => {
             </div>
 
             {/* Chat Area */}
-            <div className="flex-1 p-4 bg-[#FDF2F2]/30 overflow-y-auto text-xs space-y-4">
+            <div className="flex-1 p-4 bg-[#FDF2F2]/30 overflow-y-auto text-sm space-y-4">
               <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-pink-50 max-w-[80%]">
                 Hello! How can I help you with Textile e-Auction today?
               </div>
@@ -35,7 +35,7 @@ export const LiveChat = () => {
 
             {/* Input */}
             <div className="p-4 bg-white border-t border-pink-50 flex gap-2">
-              <input type="text" placeholder="Type message..." className="flex-1 bg-gray-50 p-3 rounded-full text-xs outline-none focus:ring-1 focus:ring-[#D48282]" />
+              <input type="text" placeholder="Type message..." className="flex-1 bg-gray-50 p-3 rounded-full text-sm outline-none focus:ring-1 focus:ring-[#D48282]" />
               <button className="bg-[#D48282] text-white p-3 rounded-full shadow-lg shadow-pink-100">
                 <Send size={14} />
               </button>

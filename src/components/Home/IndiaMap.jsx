@@ -29,11 +29,11 @@ export const IndiaMap = () => {
         
         {/* LEFT SIDE */}
         <div>
-          <span className="text-[#4A4A4A] font-black text-xs uppercase tracking-widest">
+          <span className="text-[#4A4A4A] font-extrabold text-sm uppercase tracking-wider">
             Our Network
           </span>
 
-          <h2 className="text-4xl font-black text-[#4A4A4A] mt-2 mb-6 leading-tight">
+          <h2 className="text-4xl font-extrabold text-[#4A4A4A] mt-2 mb-6 leading-tight">
             Our Textile <br /> Associates (India)
           </h2>
 
@@ -50,7 +50,7 @@ export const IndiaMap = () => {
             {workPoints.map((item, index) => (
               <div 
                 key={index} 
-                className="p-4 bg-[#FFF0F5] rounded-2xl text-[12px] font-bold text-[#4A4A4A] border border-pink-100 hover:bg-[#ffe4ec] transition"
+                className="p-4 bg-[#FFF0F5] rounded-2xl text-sm font-bold text-[#4A4A4A] border border-pink-100 hover:bg-[#ffe4ec] transition"
               >
                 ✓ {item}
               </div>
