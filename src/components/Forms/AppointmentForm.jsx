@@ -10,7 +10,7 @@ export const AppointmentForm = () => {
 
   const InputGroup = ({ label, name, type = "text", placeholder, icon: Icon }) => (
     <div className="flex flex-col gap-2">
-      <label className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] ml-1">{label}</label>
+      <label className="text-[10px] font-black text-gray-600 uppercase tracking-[0.2em] ml-1">{label}</label>
       <div className="relative">
         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-pink-400">
            {Icon && <Icon size={16} />}
@@ -20,7 +20,7 @@ export const AppointmentForm = () => {
           type={type}
           onChange={handleChange}
           placeholder={placeholder}
-          className="w-full p-4 pl-12 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#bc114a]/20 focus:border-[#bc114a] transition-all text-sm font-medium"
+          className="w-full p-4 pl-12 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#bc114a]/0 focus:border-[#bc114a] transition-all text-sm font-medium"
         />
       </div>
     </div>
@@ -33,7 +33,7 @@ export const AppointmentForm = () => {
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 border-b border-pink-50 pb-8">
         <div>
           <h2 className="text-3xl font-black text-[#4A4A4A]">Visit with <span className="text-[#bc114a]">Appointment</span></h2>
-          <p className="text-gray-400 text-xs font-bold uppercase mt-1 tracking-widest">Schedule your official visit</p>
+          <p className="text-gray-600 text-xs font-bold uppercase mt-1 tracking-widest">Schedule your official visit</p>
         </div>
         <div className="bg-[#FFF0F5] p-4 rounded-2xl border border-pink-100">
            <Calendar className="text-[#bc114a]" size={32} />
@@ -50,7 +50,7 @@ export const AppointmentForm = () => {
         <InputGroup label="Preferred Time" name="time" type="time" icon={Clock} />
 
         <div className="md:col-span-2">
-          <label className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] ml-1 mb-2 block">Purpose of Visit</label>
+          <label className="text-[10px] font-black text-gray-600 uppercase tracking-[0.2em] ml-1 mb-2 block">Purpose of Visit</label>
           <textarea 
             name="purpose"
             onChange={handleChange}

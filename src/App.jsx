@@ -22,6 +22,7 @@ import { Terms } from './pages/Terms'; // NEW
 import { AppointmentPage } from './pages/Appointment'; // NEW
 import ScrollToTop from './components/Common/ScrollToTop'; // NEW
 import Map from './components/Home/Map'; // NEW
+import { Circulars } from './pages/Circular';
 function App() {
   return (
     <Router>
@@ -44,7 +45,7 @@ function App() {
           <Route path="/management" element={<Management />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/appointment" element={<AppointmentPage />} />
-          <Route path="/circulars" element={<News title="Circulars" />} />
+          <Route path="/circulars" element={<Circulars />} />
           <Route path="/blog" element={<News title="Latest Blogs" />} />
           <Route path="/trade-enquiry" element={<TradeEnquiry />} />
           <Route path="/quotation" element={<Quotation />} />

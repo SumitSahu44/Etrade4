@@ -28,7 +28,7 @@ export const Terms = () => {
            <Shield className="text-[#bc114a]" size={32} />
            <span className="text-[#bc114a] font-black uppercase tracking-widest text-xs">Legal Compliance</span>
         </div>
-        <h1 className="text-4xl font-black text-[#4A4A4A] uppercase tracking-tighter mb-8">
+        <h1 className="text-4xl font-black text-[#4A4A4A]  tracking-tighter mb-8">
            e-Trade <span className="text-[#bc114a]">Terms & Conditions</span>
         </h1>
         
