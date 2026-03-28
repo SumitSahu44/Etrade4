@@ -38,7 +38,7 @@ export const Footer = () => (
             <li><Link to="/auction" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> e-Auction Portal</Link></li>
             <li><Link to="/quotation" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> e-Quotation</Link></li>
             <li><Link to="/tenders" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> Tenders & Contracts</Link></li>
-            <li><Link to="/trade-enquiry" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> Trade Enquiry (e-Form)</Link></li>
+            <li><Link to="/trade-enquiry" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#bc114a] group-hover:scale-110 transition-transform" /> Trade Enquiry</Link></li>
             <li><Link to="/buyer" className="hover:text-white transition-colors">Buyer's Platform</Link></li>
             <li><Link to="/seller" className="hover:text-white transition-colors">Seller's Platform</Link></li>
           </ul>
