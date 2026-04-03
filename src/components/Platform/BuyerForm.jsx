@@ -17,7 +17,7 @@ export const BuyerForm = () => {
         type={type}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#db2777]/20 focus:border-[#db2777] transition-all text-sm font-medium"
+        className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/20 focus:border-[#a58c67] transition-all text-sm font-medium"
       />
     </div>
   );
@@ -71,7 +71,7 @@ export const BuyerForm = () => {
           <label className="text-sm font-extrabold text-gray-600 uppercase  ml-1">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
           <div className="relative group">
             <input type="file" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
-            <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#db2777] transition-all">
+            <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#a58c67] transition-all">
                <Upload size={18} className="mx-auto text-[#4A4A4A] mb-1" />
                <span className="text-sm font-bold text-gray-600 uppercase">Choose File</span>
             </div>

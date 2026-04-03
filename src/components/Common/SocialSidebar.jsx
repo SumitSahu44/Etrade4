@@ -9,7 +9,7 @@ export const SocialSidebar = () => (
       { Icon: Twitter, color: 'hover:bg-sky-500' },
       { Icon: Linkedin, color: 'hover:bg-blue-700' },
     ].map((item, i) => (
-      <a key={i} href="#" className={`w-10 h-10 bg-white shadow-xl rounded-full flex items-center justify-center text-[#db2777] hover:text-white ${item.color} transition-all border border-pink-50`}>
+      <a key={i} href="#" className={`w-10 h-10 bg-[#a58c67] shadow-xl rounded-full flex items-center justify-center text-[#fff] hover:text-white ${item.color} transition-all border border-pink-50`}>
         <item.Icon size={18} />
       </a>
     ))}

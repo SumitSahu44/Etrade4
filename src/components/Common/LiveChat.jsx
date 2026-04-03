@@ -1,55 +1,79 @@
-import React, { useState } from 'react';
-import { MessageCircle, X, Send } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from "react";
+import { MessageCircle, X, Send, Headphones } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const LiveChat = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-28 right-10 z-[100]">
+    <div className="fixed bottom-10 right-6 z-[100] flex flex-col items-end gap-3">
+
+      {/* CHAT BOX */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="bg-white w-80 h-[450px] rounded-[2.5rem] shadow-2xl border border-pink-50 overflow-hidden flex flex-col mb-4"
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 15 }}
+            className="w-80 h-[420px] bg-white rounded-lg shadow-xl border border-gray-200 flex flex-col"
           >
             {/* Header */}
-            <div className="bg-[#4A4A4A] p-6 text-white flex justify-between items-center">
-              <div className="flex-1">
-                <p className="text-sm font-extrabold uppercase tracking-wider text-white/50">Support</p>
-                <h3 className="font-bold">e-Trade Assistant</h3>
+            <div className="bg-[#a58c67] px-4 py-3 text-white flex justify-between items-center">
+              <div className="flex items-center gap-2">
+                <Headphones size={16} />
+                <div>
+                  <p className="text-[10px] uppercase text-white/70">Support</p>
+                  <h3 className="text-sm font-semibold">Live Chat</h3>
+                </div>
               </div>
-              <button onClick={() => setIsOpen(false)} className="hover:rotate-90 transition-transform">
-                <X size={20} />
+
+              <button onClick={() => setIsOpen(false)}>
+                <X size={18} />
               </button>
             </div>
 
             {/* Chat Area */}
-            <div className="flex-1 p-4 bg-[#FDF2F2]/30 overflow-y-auto text-sm space-y-4">
-              <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-pink-50 max-w-[80%]">
-                Hello! How can I help you with Textile e-Auction today?
+            <div className="flex-1 p-4 bg-gray-50 overflow-y-auto text-sm">
+              <div className="bg-white p-3 rounded-md border max-w-[80%]">
+                Hello 👋 How can we help you today?
               </div>
             </div>
 
             {/* Input */}
-            <div className="p-4 bg-white border-t border-pink-50 flex gap-2">
-              <input type="text" placeholder="Type message..." className="flex-1 bg-gray-50 p-3 rounded-full text-sm outline-none focus:ring-1 focus:ring-[#D48282]" />
-              <button className="bg-[#D48282] text-white p-3 rounded-full shadow-lg shadow-pink-100">
-                <Send size={14} />
+            <div className="p-3 border-t flex gap-2 bg-white">
+              <input
+                type="text"
+                placeholder="Type your message..."
+                className="flex-1 border rounded-md px-3 py-2 text-sm outline-none focus:ring-1 focus:ring-[#a58c67]"
+              />
+              <button className="bg-[#a58c67] text-white px-3 rounded-md">
+                <Send size={16} />
               </button>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className="bg-[#4A4A4A] text-white p-5 rounded-full shadow-2xl hover:scale-110 transition-all border-4 border-white"
-      >
-        <MessageCircle size={24} />
-      </button>
+      {/* FLOAT AREA */}
+      <div className="flex items-center gap-3">
+
+        {/* ✅ WE ARE LIVE (FIXED WIDTH + NO OVERLAP) */}
+        {!isOpen && (
+          <div className="bg-white text-xs font-semibold px-4 py-2 rounded-full shadow border whitespace-nowrap min-w-[120px] text-center">
+            <span className="text-green-500 mr-1">●</span> We are live
+          </div>
+        )}
+
+        {/* ✅ BUTTON (NO SIZE SHIFT) */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-14 h-14 flex items-center justify-center bg-[#a58c67] text-white rounded-full shadow-lg transition"
+        >
+          <div className="w-6 h-6 flex items-center justify-center">
+            {isOpen ? <X size={20} /> : <MessageCircle size={20} />}
+          </div>
+        </button>
+      </div>
     </div>
   );
 };

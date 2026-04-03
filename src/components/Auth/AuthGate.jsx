@@ -23,7 +23,7 @@ export const AuthGate = ({ children, platformName }) => {
 
         {/* Lock Icon Section */}
         <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-8 border-4 border-[#FCE7F3] shadow-sm">
-          <Lock className="text-[#DB2777]" size={32} />
+          <Lock className="text-[#a58c67]" size={32} />
         </div>
 
         {/* Text Section */}
@@ -41,8 +41,8 @@ export const AuthGate = ({ children, platformName }) => {
               value={code}
               onChange={(e) => setCode(e.target.value)}
               placeholder="ENTER CODE: PAREKH2026"
-              className="w-full px-6 py-5 rounded-3xl border-2 border-[#FDF2F8] focus:outline-none focus:border-[#DB2777] focus:ring-4 focus:ring-pink-50 transition-all text-center font-extrabold tracking-[0.1em] bg-[#FDF2F8]/50 text-[#4A4A4A] 
-              placeholder:text-[#DB2777]/30 placeholder:font-bold placeholder:tracking-normal"
+              className="w-full px-6 py-5 rounded-3xl border-2 border-[#FDF2F8] focus:outline-none focus:border-[#a58c67] focus:ring-4 focus:ring-pink-50 transition-all text-center font-extrabold tracking-[0.1em] bg-[#FDF2F8]/50 text-[#4A4A4A] 
+              placeholder:text-[#a58c67]/30 placeholder:font-bold placeholder:tracking-normal"
             />
           </div>
 
@@ -54,7 +54,7 @@ export const AuthGate = ({ children, platformName }) => {
 
           <button
             onClick={handleVerify}
-            className="w-full bg-[#DB2777] text-white py-5 rounded-3xl font-extrabold text-sm  hover:bg-[#BE185D] hover:shadow-xl hover:shadow-pink-200 transition-all active:scale-95 flex items-center justify-center gap-3 uppercase"
+            className="w-full bg-[#a58c67] text-white py-5 rounded-3xl font-extrabold text-sm  hover:bg-[#BE185D] hover:shadow-xl hover:shadow-pink-200 transition-all active:scale-95 flex items-center justify-center gap-3 uppercase"
           >
             <ShieldCheck size={18} />
             Verify & Enter
