@@ -4,7 +4,7 @@ import { Upload, Eye, Send } from 'lucide-react';
 
 export const SellerPlatform = () => {
   return (
-    <div className="py-12 bg-[#FFF0F5]/30 min-h-screen">
+    <div className=" bg-[#FFF0F5]/30 min-h-screen">
       <AuthGate platformName="SELLER'S PLATFORM">
         <div className="max-w-5xl mx-auto bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-pink-100">
           
@@ -90,6 +90,10 @@ export const SellerPlatform = () => {
           </div>
         </div>
       </AuthGate>
+
+
+
+      
     </div>
   );
 };

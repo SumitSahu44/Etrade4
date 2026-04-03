@@ -67,7 +67,7 @@ export const Footer = () => (
             <div className="space-y-4">
               <div className="flex gap-4 items-start">
                 <MapPin className="text-[#a58c67] shrink-0" size={18} />
-                <p className="text-sm font-medium text-gray-400 leading-relaxed uppercase">Hyderabad, Telangana <br /> 500001, India</p>
+                <p className="text-sm font-medium text-gray-400 leading-relaxed uppercase">Hyderabad, TG, India</p>
               </div>
               <div className="flex gap-4 items-center">
                 <Mail className="text-[#a58c67] shrink-0" size={18} />

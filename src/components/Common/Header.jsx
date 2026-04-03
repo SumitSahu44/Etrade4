@@ -5,7 +5,7 @@ import { Menu, Globe, ChevronDown, MessageSquare, Megaphone, Gavel, FileText, Br
 const TopBar = () => (
 <div className="h-[28px] bg-[#a58c67] border-b border-blue-200 flex items-center overflow-hidden">
   <div className="animate-marquee whitespace-nowrap text-[10px] font-bold text-[#fff] tracking-widest">
-    ✨ Parekh e-Trade Market (Textile) | 📞 CALL: +91-XXXXX-XXXXX | 🏢 OFFICE: HYDERABAD, TG | 🚀 JOIN THE NEXT <span className="underline">e-Auction</span> LIVE!
+    ✨ Parekh e-Trade Market (Textile) | 📞 CALL: +91-XXXXX-XXXXX | 🏢 OFFICE: HYDERABAD, TG, INDIA | 🚀 JOIN THE NEXT <span className="underline">e-Auction</span> LIVE!
   </div>
 </div>
 );
@@ -66,7 +66,7 @@ export default function Header() {
 
     {/* Sub Text */}
     <p className="text-[9px] md:text-[10px] font-semibold tracking-wider text-gray-400 uppercase">
-      HYDERABAD, TG
+      HYDERABAD, TG, INDIA
     </p>
   </div>
 </Link>

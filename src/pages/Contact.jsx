@@ -8,18 +8,18 @@ export const Contact = () => (
       {/* Contact Info Cards */}
       <div className="lg:col-span-1 space-y-6">
         <div className="bg-[#4A4A4A] p-10 rounded-[3rem] text-white">
-          <h3 className="text-2xl font-extrabold mb-8 text-[#4A4A4A]">Get In Touch</h3>
+          <h3 className="text-2xl font-extrabold mb-8 text-[#fff]">Get In Touch</h3>
           <div className="space-y-8">
             <div className="flex gap-4">
-              <MapPin className="text-[#4A4A4A] shrink-0" />
-              <p className="text-sm font-medium">Hyderabad, Telangana - 500001, India</p>
+              <MapPin className="text-[#fff] shrink-0" />
+              <p className="text-sm font-medium">Hyderabad, TG, India</p>
             </div>
             <div className="flex gap-4">
-              <Mail className="text-[#4A4A4A] shrink-0" />
+              <Mail className="text-[#fff] shrink-0" />
               <p className="text-sm font-medium">e-trade@parekhtrade.com</p>
             </div>
             <div className="flex gap-4">
-              <Phone className="text-[#4A4A4A] shrink-0" />
+              <Phone className="text-[#fff] shrink-0" />
               <p className="text-sm font-medium">+91-XXXXX-XXXXX</p>
             </div>
           </div>

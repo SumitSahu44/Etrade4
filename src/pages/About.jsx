@@ -1,34 +1,68 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 export const About = () => (
-  <div className="min-h-screen">
-    {/* Page Header */}
-    <section className="py-24 bg-[#FDF2F2] text-center">
-      <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-[#4A4A4A] font-extrabold text-sm uppercase tracking-[0.6em]">Heritage Since 25 Years</motion.span>
-      <h1 className="text-6xl font-extrabold text-[#4A4A4A] er mt-4 uppercase">About <span className="text-[#4A4A4A] normal-case">Parekh e-Trade</span></h1>
-      <div className="h-1.5 w-24 bg-[#D48282] mx-auto mt-6 rounded-full"></div>
+  <div className="min-h-screen bg-[#f8f9fb]">
+
+    {/* HEADER */}
+    <section className="py-20 text-center border-b border-gray-200 bg-white">
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="text-gray-500 font-semibold text-xs uppercase tracking-[0.4em]"
+      >
+        Heritage Since 25 Years
+      </motion.span>
+
+      <h1 className="mt-3 text-4xl md:text-5xl font-bold text-gray-800">
+        About Parekh e-Trade
+      </h1>
+
+      <div className="h-1 w-16 bg-[#a58c67] mx-auto mt-4"></div>
     </section>
 
-    {/* Vision & Management */}
-    <section className="max-w-7xl mx-auto py-20 px-6 grid md:grid-cols-2 gap-20 items-center">
-      <div className="space-y-6">
-        <h2 className="text-4xl font-extrabold text-[#4A4A4A] leading-tight uppercase">Driving India's <br /> Textile <span className="text-[#4A4A4A]">Digitization</span></h2>
-        <p className="text-gray-500 font-medium leading-loose">
-          Parekh e-Trade Market (Textile) is a leading B2B platform based in Hyderabad. We specialize in providing a secure, transparent, and efficient marketplace for raw materials, machineries, and finished products.
+    {/* MAIN SECTION */}
+    <section className="max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      {/* LEFT CONTENT */}
+      <div>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+          Driving India's Textile Digitization
+        </h2>
+
+        <p className="mt-4 text-gray-600 text-sm md:text-base leading-relaxed max-w-md">
+          Parekh e-Trade Market (Textile) is a leading B2B platform based in Hyderabad.
+          We provide a secure, transparent, and efficient marketplace for raw materials,
+          machineries, and finished textile products.
         </p>
-        <div className="p-8 bg-[#4A4A4A] text-white rounded-[3rem] shadow-xl">
-          <h4 className="text-[#4A4A4A] font-extrabold uppercase text-sm mb-2">Our Mission</h4>
-          <p className="text-sm text-gray-500">To empower every textile manufacturer and buyer with real-time trading data and authorized official verification.</p>
+
+        {/* Mission Box */}
+        <div className="mt-6 p-6 border border-gray-200 bg-white rounded-md">
+          <h4 className="text-sm font-semibold text-[#a58c67] uppercase mb-1">
+            Our Mission
+          </h4>
+          <p className="text-sm text-gray-600">
+            To empower textile manufacturers and buyers with real-time trading data,
+            ensuring transparency and trusted transactions.
+          </p>
         </div>
       </div>
+
+      {/* RIGHT IMAGE */}
       <div className="relative">
-        <img src="https://images.unsplash.com/photo-1606259458027-54d2a728b6ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFicmljfGVufDB8fDB8fHww" className="rounded-[4rem] shadow-2xl" alt="Factory" />
-        <div className="absolute -bottom-10 -left-10 bg-white p-10 rounded-[3rem] shadow-2xl border border-pink-50">
-          <p className="text-4xl font-extrabold text-[#4A4A4A]">100%</p>
-          <p className="text-sm font-bold text-gray-400 uppercase tracking-wider">Verified Trade</p>
+        <img
+          src="https://plus.unsplash.com/premium_photo-1664299852788-5a24db0d7e05?w=600"
+          alt="Factory"
+          className="w-full h-[320px] md:h-[420px] object-cover rounded-md border border-gray-200"
+        />
+
+        {/* STAT CARD */}
+        <div className="absolute bottom-4 left-4 bg-white px-6 py-4 border border-gray-200 rounded-md shadow-sm">
+          <p className="text-2xl font-bold text-gray-800">100%</p>
+          <p className="text-xs text-gray-500 uppercase">Verified Trade</p>
         </div>
       </div>
+
     </section>
   </div>
 );
