@@ -40,7 +40,7 @@ export const Quotation = () => (
               <label className="text-sm font-extrabold text-gray-400 uppercase tracking-wider ml-2">Detailed Specifications</label>
               <textarea placeholder="Mention GSM, Yarn Count, Brand, or Model No." className="p-6 bg-gray-50 rounded-3xl h-40 outline-none border-none"></textarea>
             </div>
-            <button className="md:col-span-2 bg-[#bc114a] text-white py-5 rounded-full font-extrabold uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-[#bc114a]/20 flex items-center justify-center gap-3">
+            <button className="md:col-span-2 bg-[#a58c67] text-white py-5 rounded-full font-extrabold uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-[#a58c67]/20 flex items-center justify-center gap-3">
               <Send size={18} /> Request Official Quote
             </button>
           </form>

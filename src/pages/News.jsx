@@ -4,7 +4,7 @@ export const News = ({ title }) => {
   const items = [1, 2, 3]; // Dummy data
   return (
     <div className="min-h-screen py-20 px-6 max-w-[95%] mx-auto">
-      <h2 className="text-3xl font-extrabold text-[#4A4A4A] uppercase  mb-10 border-l-8 border-[#bc114a] pl-6">{title}</h2>
+      <h2 className="text-3xl font-extrabold text-[#4A4A4A] uppercase  mb-10 border-l-8 border-[#a58c67] pl-6">{title}</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {items.map(i => (
           <div key={i} className="bg-white rounded-[2.5rem] overflow-hidden border border-pink-50 shadow-sm hover:shadow-2xl transition-all group">
@@ -15,7 +15,7 @@ export const News = ({ title }) => {
               <span className="text-sm font-bold text-[#4A4A4A] uppercase tracking-wider">March 2026</span>
               <h4 className="text-lg font-bold text-[#4A4A4A] mt-2 leading-tight">Latest Trends in Industrial Textile Machineries</h4>
               <p className="text-sm text-gray-400 mt-4 line-clamp-2">Exploring how Parekh e-Trade is revolutionizing the supply chain...</p>
-              <button className="mt-6 text-[#4A4A4A] font-extrabold text-sm uppercase tracking-wider border-b-2 border-[#bc114a]">Read Full</button>
+              <button className="mt-6 text-[#4A4A4A] font-extrabold text-sm uppercase tracking-wider border-b-2 border-[#a58c67]">Read Full</button>
             </div>
           </div>
         ))}

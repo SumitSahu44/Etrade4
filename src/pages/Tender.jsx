@@ -9,14 +9,14 @@ export const Tenders = () => {
 
   return (
     <div className="min-h-screen bg-white pb-20">
-      <div className="bg-[#bc114a] py-20 text-center text-white">
+      <div className="bg-[#a58c67] py-20 text-center text-white">
         <h1 className="text-5xl font-extrabold uppercase er "><span className="normal-case">e-Auction</span> & <span className="opacity-70">Tenders</span></h1>
         <p className="mt-4 text-pink-100 font-bold uppercase tracking-wider text-sm">Official Bidding Portal</p>
       </div>
 
       <div className="max-w-6xl mx-auto mt-[-50px] grid gap-8 px-6">
         {list.map((item) => (
-          <div key={item.id} className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-pink-50 flex flex-wrap justify-between items-center group hover:border-[#bc114a] transition-all">
+          <div key={item.id} className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-pink-50 flex flex-wrap justify-between items-center group hover:border-[#a58c67] transition-all">
             <div className="flex gap-6 items-center">
               <div className={`p-5 rounded-3xl ${item.type === 'Auction' ? 'bg-green-100 text-green-600 animate-pulse' : 'bg-pink-50 text-[#4A4A4A]'}`}>
                 {item.type === 'Auction' ? <Gavel /> : <ShieldCheck />}

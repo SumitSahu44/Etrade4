@@ -40,7 +40,7 @@ export const IndiaMap = () => {
           {/* 👉 Updated Description */}
           <p className="text-gray-500 mb-8 font-medium">
             We are connected with over 500+ textile units across major hubs like{" "}
-            <span className="font-semibold text-[#bc114a]">
+            <span className="font-semibold text-[#a58c67]">
               {locations.join(", ")}
             </span>.
           </p>

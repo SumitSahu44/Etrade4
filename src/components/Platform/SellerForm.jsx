@@ -16,7 +16,7 @@ export const SellerForm = () => {
         type={type}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#bc114a]/20 focus:border-[#bc114a] transition-all text-sm font-medium"
+        className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/20 focus:border-[#a58c67] transition-all text-sm font-medium"
       />
     </div>
   );
@@ -24,8 +24,8 @@ export const SellerForm = () => {
   return (
     <div className="max-w-5xl mx-auto bg-white p-10 rounded-[3rem] shadow-2xl shadow-pink-100/50 border border-pink-50">
       <div className="flex justify-between items-center mb-10 border-b border-pink-50 pb-6">
-        <h2 className="text-3xl font-extrabold text-[#4A4A4A]">Seller's <span className="text-[#bc114a]">Portal</span></h2>
-        <span className="text-sm bg-[#bc114a] text-white px-4 py-1 rounded-full font-bold uppercase tracking-wider">Registration Form</span>
+        <h2 className="text-3xl font-extrabold text-[#4A4A4A]">Seller's <span className="text-[#a58c67]">Portal</span></h2>
+        <span className="text-sm bg-[#a58c67] text-white px-4 py-1 rounded-full font-bold uppercase tracking-wider">Registration Form</span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -71,7 +71,7 @@ export const SellerForm = () => {
           <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
           <div className="relative group">
             <input type="file" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
-            <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#bc114a] transition-all">
+            <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#a58c67] transition-all">
               <Upload size={18} className="mx-auto text-[#4A4A4A] mb-1" />
               <span className="text-sm font-bold text-gray-400 uppercase">Choose File</span>
             </div>
@@ -81,7 +81,7 @@ export const SellerForm = () => {
         {/* Roll-down mode items */}
         <div className="flex flex-col gap-2">
           <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">Textile Items to Sell</label>
-          <select name="items_to_sell" onChange={handleChange} className="w-full p-4 bg-[#bc114a] text-white rounded-[1.2rem] outline-none text-sm font-bold">
+          <select name="items_to_sell" onChange={handleChange} className="w-full p-4 bg-[#a58c67] text-white rounded-[1.2rem] outline-none text-sm font-bold">
             <option>Textile Raw Materials</option>
             <option>Textile Finished Products</option>
             <option>Textile Machineries</option>
@@ -99,10 +99,10 @@ export const SellerForm = () => {
 
       {/* Action Buttons */}
       <div className="mt-12 flex flex-wrap gap-4 justify-center">
-        <button className="flex items-center gap-2 bg-[#FFF0F5] text-[#4A4A4A] px-10 py-4 rounded-full font-extrabold text-sm uppercase tracking-wider hover:bg-[#bc114a] hover:text-white transition-all">
+        <button className="flex items-center gap-2 bg-[#FFF0F5] text-[#4A4A4A] px-10 py-4 rounded-full font-extrabold text-sm uppercase tracking-wider hover:bg-[#a58c67] hover:text-white transition-all">
           <Eye size={16} /> Preview
         </button>
-        <button className="flex items-center gap-2 bg-[#bc114a] text-white px-12 py-4 rounded-full font-extrabold text-sm uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-pink-100">
+        <button className="flex items-center gap-2 bg-[#a58c67] text-white px-12 py-4 rounded-full font-extrabold text-sm uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-pink-100">
           <Send size={16} /> Submit Form
         </button>
       </div>

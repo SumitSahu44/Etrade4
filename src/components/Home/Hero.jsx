@@ -1,67 +1,79 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Globe, } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 export const Hero = () => {
   return (
-    <section className="w-[95%] mx-auto mt-6 relative h-[550px] rounded-[3.5rem] overflow-hidden shadow-2xl shadow-pink-100 bg-white">
+    <section
+      className="w-[95%] mx-auto mt-6 rounded-lg overflow-hidden"
+      style={{
+        backgroundColor: "#3b2a22",
+        backgroundImage: 'url("https://www.transparenttextures.com/patterns/fabric-of-squares.png")',
+      }}
+    >
+      
+      <div className="grid md:grid-cols-2 items-center">
+        
+        {/* LEFT CONTENT */}
+        <div className="px-6 md:px-10 lg:px-14 py-12">
+          
+          <span className="text-xs text-gray-300 font-semibold uppercase tracking-wider">
+            B2B Textile Platform
+          </span>
 
-      {/* Background Subtle Pattern in Pink */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23db2777' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}>
-      </div>
+          <h1 className="mt-3 text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+            Reliable Textile <br />
+            Marketplace for Bulk Buyers
+          </h1>
 
-      <div className="grid md:grid-cols-2 h-full items-center relative z-10">
+          <p className="mt-4 text-gray-300 text-sm md:text-base max-w-md">
+            Source fabrics, linen, and textile materials from verified suppliers across India with ease and trust.
+          </p>
 
-        {/* Left Side: Text Content */}
-        <div className="px-12 lg:px-20">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="flex items-center gap-2 mb-6">
-              <span className="w-10 h-[1px] bg-[#4A4A4A]"></span>
-              <span className="text-[#4A4A4A] font-extrabold text-sm uppercase tracking-[0.4em]">
-                B2B Textile <span className="normal-case">e-Trade</span>
-              </span>
-            </div>
+          {/* CTA */}
+          <div className="mt-6 flex gap-4 flex-wrap">
+            <Link
+              to="/products"
+              className="bg-[#a58c67] text-white px-6 py-3 text-sm font-semibold rounded-md hover:bg-[#a50e40] transition flex items-center gap-2"
+            >
+              Explore Market
+              <ArrowRight size={16} />
+            </Link>
 
-            <h2 className="text-5xl lg:text-7xl font-extrabold text-[#4A4A4A] leading-[1.05] er">
-              Gateway to <br />
-              <span className="relative inline-block text-[#4A4A4A]">
-                Excellence
-              </span>
-            </h2>
-
-            <p className="mt-8 text-gray-500 text-lg font-medium leading-relaxed max-w-md">
-              India's premier digital marketplace for fabrics, raw materials, and machineries.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-5">
-              <Link to="/products" className="bg-[#4A4A4A] text-white px-10 py-4 rounded-full font-bold shadow-xl hover:bg-[#4A4A4A] transition-all flex items-center gap-3 group">
-                Explore Market
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Right Side: Image with Pink Glow */}
-        <div className="h-full relative flex items-center justify-end pr-6 lg:pr-12">
-          <div className="h-[85%] w-[90%] relative">
-            <img
-              src="https://images.unsplash.com/photo-1615806528302-05c722d51e0d?q=80&w=2070"
-              alt="Textile"
-              className="h-full w-full object-cover rounded-[4rem] shadow-2xl border-[12px] border-white"
-            />
-            {/* Pink Floating Tag */}
-            <div className="absolute -left-5 bottom-20 bg-[#4A4A4A] text-white p-6 rounded-[2rem] shadow-2xl">
-              <p className="text-2xl font-extrabold">100%</p>
-              <p className="text-sm font-bold uppercase tracking-wider">Verified</p>
-            </div>
+            <Link
+              to="/trade-enquiry"
+              className="border border-gray-400 text-gray-200 px-6 py-3 text-sm font-semibold rounded-md hover:border-[#a58c67] hover:text-white transition"
+            >
+              Trade Enquiry
+            </Link>
           </div>
         </div>
+
+        {/* RIGHT SIDE */}
+        <div className="p-6 md:p-8">
+          <div className="grid grid-cols-2 gap-4">
+            
+            <img
+              src="/images/e-trade.avif"
+              alt=""
+              className="w-full h-[140px] border border-white  md:h-[180px] object-cover rounded-md"
+            />
+
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661962431511-32e4ebf7e5b0?w=600"
+              alt=""
+              className="w-full h-[140px] border border-white  md:h-[180px] object-cover rounded-md"
+            />
+
+            <img
+              src="/images/etrade3.avif"
+              alt=""
+              className="col-span-2 border border-white w-full h-[160px] md:h-[200px] object-cover rounded-md"
+            />
+
+          </div>
+        </div>
+
       </div>
     </section>
   );

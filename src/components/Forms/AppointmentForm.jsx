@@ -20,7 +20,7 @@ export const AppointmentForm = () => {
           type={type}
           onChange={handleChange}
           placeholder={placeholder}
-          className="w-full p-4 pl-12 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#bc114a]/0 focus:border-[#bc114a] transition-all text-sm font-medium"
+          className="w-full p-4 pl-12 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/0 focus:border-[#a58c67] transition-all text-sm font-medium"
         />
       </div>
     </div>
@@ -32,11 +32,11 @@ export const AppointmentForm = () => {
 
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12 border-b border-pink-50 pb-8">
         <div>
-          <h2 className="text-3xl font-extrabold text-[#4A4A4A]">Visit with <span className="text-[#bc114a]">Appointment</span></h2>
+          <h2 className="text-3xl font-extrabold text-[#4A4A4A]">Visit with <span className="text-[#a58c67]">Appointment</span></h2>
           <p className="text-gray-600 text-sm font-bold uppercase mt-1 tracking-wider">Schedule your official visit</p>
         </div>
         <div className="bg-[#FFF0F5] p-4 rounded-2xl border border-pink-100">
-          <Calendar className="text-[#bc114a]" size={32} />
+          <Calendar className="text-[#a58c67]" size={32} />
         </div>
       </div>
 
@@ -55,13 +55,13 @@ export const AppointmentForm = () => {
             name="purpose"
             onChange={handleChange}
             placeholder="Please specify the reason for your visit (e.g., Trade discussion, Facility inspection, etc.)"
-            className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#bc114a]/20 focus:border-[#bc114a] transition-all text-sm font-medium h-32"
+            className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/20 focus:border-[#a58c67] transition-all text-sm font-medium h-32"
           ></textarea>
         </div>
       </div>
 
       <div className="mt-12 flex justify-center relative z-10">
-        <button className="flex items-center gap-3 bg-[#bc114a] text-white px-16 py-5 rounded-full font-extrabold text-sm uppercase  hover:bg-black transition-all shadow-xl shadow-[#bc114a]/20 group">
+        <button className="flex items-center gap-3 bg-[#a58c67] text-white px-16 py-5 rounded-full font-extrabold text-sm uppercase  hover:bg-black transition-all shadow-xl shadow-[#a58c67]/20 group">
           <Send size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           Confirm Appointment
         </button>

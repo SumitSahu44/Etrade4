@@ -10,11 +10,11 @@ export const TradeEnquiry = () => (
       <form className="grid md:grid-cols-2 gap-8 mt-10">
         <div className="flex flex-col gap-2">
            <label className="text-sm font-extrabold text-gray-400 uppercase tracking-wider ml-2">Full Name</label>
-           <input type="text" className="p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#bc114a]/20" />
+           <input type="text" className="p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#a58c67]/20" />
         </div>
         <div className="flex flex-col gap-2">
            <label className="text-sm font-extrabold text-gray-400 uppercase tracking-wider ml-2">Business Name</label>
-           <input type="text" className="p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#bc114a]/20" />
+           <input type="text" className="p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#a58c67]/20" />
         </div>
         <div className="flex flex-col gap-2 md:col-span-2">
            <label className="text-sm font-extrabold text-gray-400 uppercase tracking-wider ml-2">Nature of Enquiry</label>
@@ -26,7 +26,7 @@ export const TradeEnquiry = () => (
            </select>
         </div>
         <textarea placeholder="Message..." className="md:col-span-2 p-6 bg-gray-50 rounded-[2rem] h-40 outline-none border-none"></textarea>
-        <button className="md:col-span-2 bg-[#bc114a] text-white py-5 rounded-full font-extrabold uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-[#bc114a]/20 flex items-center justify-center gap-3">
+        <button className="md:col-span-2 bg-[#a58c67] text-white py-5 rounded-full font-extrabold uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-[#a58c67]/20 flex items-center justify-center gap-3">
           <Send size={18} /> Send Official Enquiry
         </button>
       </form>

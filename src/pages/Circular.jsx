@@ -11,7 +11,7 @@ export const Circulars = ({ title = "Official Circulars" }) => {
     <div className="min-h-screen py-20 px-6 max-w-5xl mx-auto bg-white">
       {/* Header Section */}
       <div className="flex items-center gap-4 mb-16">
-        <div className="h-12 w-2 bg-[#bc114a]"></div>
+        <div className="h-12 w-2 bg-[#a58c67]"></div>
         <h2 className="text-4xl font-extrabold text-[#4A4A4A] uppercase er">
           {title}
         </h2>
@@ -21,10 +21,10 @@ export const Circulars = ({ title = "Official Circulars" }) => {
         {circulars.map((item) => (
           <div
             key={item.id}
-            className="group flex flex-col md:flex-row items-start md:items-center bg-white border-l-4 border-gray-100 hover:border-[#bc114a] p-6 shadow-sm hover:shadow-md transition-all duration-300 rounded-r-2xl"
+            className="group flex flex-col md:flex-row items-start md:items-center bg-white border-l-4 border-gray-100 hover:border-[#a58c67] p-6 shadow-sm hover:shadow-md transition-all duration-300 rounded-r-2xl"
           >
             {/* Date Box */}
-            <div className="flex flex-col items-center justify-center bg-gray-50 group-hover:bg-[#bc114a] transition-colors duration-300 p-4 rounded-xl min-w-[80px]">
+            <div className="flex flex-col items-center justify-center bg-gray-50 group-hover:bg-[#a58c67] transition-colors duration-300 p-4 rounded-xl min-w-[80px]">
               <span className="text-2xl font-extrabold text-[#4A4A4A] group-hover:text-white leading-none">
                 {item.date}
               </span>
@@ -35,10 +35,10 @@ export const Circulars = ({ title = "Official Circulars" }) => {
 
             {/* Content Box */}
             <div className="md:ml-8 mt-4 md:mt-0 flex-grow">
-              <span className="text-sm font-bold text-[#bc114a] uppercase ">
+              <span className="text-sm font-bold text-[#a58c67] uppercase ">
                 Circular #{item.id} • {item.year}
               </span>
-              <h4 className="text-xl font-bold text-[#4A4A4A] mt-1 group-hover:text-[#bc114a] transition-colors">
+              <h4 className="text-xl font-bold text-[#4A4A4A] mt-1 group-hover:text-[#a58c67] transition-colors">
                 {item.subject}
               </h4>
               <p className="text-sm text-gray-500 mt-2 line-clamp-1 italic">

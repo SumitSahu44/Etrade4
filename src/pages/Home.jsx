@@ -12,36 +12,46 @@ export const Home = () => {
       <Hero />
 
       {/* 2. Short About / Management Section */}
-      <section className="py-20 max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          className="relative"
-        >
-          <div className="absolute -top-10 -left-10 w-32 h-32 bg-[#FFF0F5] rounded-full -z-10"></div>
-          <h2 className="text-4xl font-extrabold text-[#4A4A4A] leading-tight">
-            Our Management <br /> & <span className="text-[#4A4A4A]">Expertise</span>
-          </h2>
-          <p className="mt-6 text-gray-500 font-medium leading-relaxed">
-            Parekh e-Trade Market is led by industry veterans with over 25 years of experience in the textile domain.
-            We provide a transparent e-Auction and e-Quotation system for seamless B2B trading.
-          </p>
-          <button className="mt-8 flex items-center gap-2 text-sm font-extrabold uppercase tracking-wider text-[#4A4A4A] hover:gap-4 transition-all">
-            Learn More <ArrowRight size={16} />
-          </button>
-        </motion.div>
+    <section className="py-16 max-w-8xl mx-auto px-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-8 bg-[#FFF0F5]/50 rounded-[2.5rem] border border-pink-50 text-center">
-            <h4 className="text-3xl font-extrabold text-[#4A4A4A]">500+</h4>
-            <p className="text-sm font-bold text-gray-400 uppercase mt-1">Associates</p>
-          </div>
-          <div className="p-8 bg-[#4A4A4A] rounded-[2.5rem] text-center shadow-xl shadow-pink-100">
-            <h4 className="text-3xl font-extrabold text-[#fff]">100%</h4>
-            <p className="text-sm font-bold text-white/50 uppercase mt-1">Verified</p>
-          </div>
-        </div>
-      </section>
+  {/* LEFT CONTENT */}
+  <motion.div
+    initial={{ opacity: 0, x: -30 }}
+    whileInView={{ opacity: 1, x: 0 }}
+  >
+    <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider">
+      Our Management
+    </span>
+
+    <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
+      Experienced Leadership <br /> Driving Textile Excellence
+    </h2>
+
+    <p className="mt-4 text-gray-500 text-sm md:text-base leading-relaxed max-w-md">
+      Parekh e-Trade Market is led by industry professionals with over 25+ years of experience in the textile sector, ensuring transparency and efficiency in e-Auction and e-Quotation processes.
+    </p>
+
+    <button className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#a58c67] hover:gap-3 transition-all">
+      Learn More <ArrowRight size={16} />
+    </button>
+  </motion.div>
+
+  {/* RIGHT STATS */}
+  <div className="grid grid-cols-2 gap-4">
+
+    <div className="p-6 border border-gray-200 rounded-md text-center bg-white">
+      <h4 className="text-2xl md:text-3xl font-bold text-gray-800">500+</h4>
+      <p className="text-xs text-gray-500 uppercase mt-1">Associates</p>
+    </div>
+
+    <div className="p-6 border border-gray-200 rounded-md text-center bg-white">
+      <h4 className="text-2xl md:text-3xl font-bold text-gray-800">100%</h4>
+      <p className="text-xs text-gray-500 uppercase mt-1">Verified</p>
+    </div>
+
+  </div>
+
+</section>
 
       {/* 3. Product Gallery (Pinterest Layout) */}
       <div className="bg-gray-50/50 py-10">
@@ -49,7 +59,7 @@ export const Home = () => {
       </div>
 
       {/* 4. India Map & Textile Associates */}
-      <IndiaMap />
+      {/* <IndiaMap /> */}
 
       {/* 5. Circulars & Blog Mini-Section */}
       <section className="py-20 max-w-[95%] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">

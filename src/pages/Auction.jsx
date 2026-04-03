@@ -12,7 +12,7 @@ export const Auction = () => {
       {/* Header */}
       <section className="py-20 bg-[#4A4A4A] text-white text-center rounded-b-[4rem]">
         <div className="flex justify-center mb-4">
-          <div className="bg-[#bc114a] p-4 rounded-full animate-bounce">
+          <div className="bg-[#a58c67] p-4 rounded-full animate-bounce">
             <Gavel size={32} />
           </div>
         </div>
@@ -23,8 +23,8 @@ export const Auction = () => {
       {/* Auction Grid */}
       <div className="max-w-[95%] mx-auto mt-16 grid lg:grid-cols-2 gap-10 px-4">
         {activeAuctions.map((auc) => (
-          <div key={auc.id} className="bg-white rounded-[3.5rem] p-10 border border-pink-50 shadow-xl relative overflow-hidden group hover:border-[#bc114a] transition-all">
-            <div className="absolute top-0 right-0 bg-[#bc114a] text-white px-8 py-2 rounded-bl-[2rem] font-extrabold text-sm uppercase tracking-wider">
+          <div key={auc.id} className="bg-white rounded-[3.5rem] p-10 border border-pink-50 shadow-xl relative overflow-hidden group hover:border-[#a58c67] transition-all">
+            <div className="absolute top-0 right-0 bg-[#a58c67] text-white px-8 py-2 rounded-bl-[2rem] font-extrabold text-sm uppercase tracking-wider">
               Live Bidding
             </div>
 
@@ -51,7 +51,7 @@ export const Auction = () => {
                 <button className="flex-1 bg-[#4A4A4A] text-white py-4 rounded-full font-extrabold uppercase tracking-wider text-sm hover:bg-black transition-all shadow-lg">
                   Place Bid Now
                 </button>
-                <button className="w-16 bg-[#FDF2F2] text-[#4A4A4A] rounded-full flex items-center justify-center hover:bg-[#bc114a] hover:text-white transition-all">
+                <button className="w-16 bg-[#FDF2F2] text-[#4A4A4A] rounded-full flex items-center justify-center hover:bg-[#a58c67] hover:text-white transition-all">
                   <TrendingUp size={20} />
                 </button>
               </div>

@@ -6,8 +6,8 @@ export const AppointmentPage = () => {
     <div className="min-h-screen bg-gray-50/30 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-extrabold text-[#bc114a] uppercase tracking-[0.5em]">Visit Our Facility</span>
-          <h1 className="text-4xl font-extrabold text-[#4A4A4A] mt-4 uppercase er">Book an <span className="text-[#bc114a]">Official Meeting</span></h1>
+          <span className="text-sm font-extrabold text-[#a58c67] uppercase tracking-[0.5em]">Visit Our Facility</span>
+          <h1 className="text-4xl font-extrabold text-[#4A4A4A] mt-4 uppercase er">Book an <span className="text-[#a58c67]">Official Meeting</span></h1>
           <p className="text-gray-400 font-medium mt-4 max-w-2xl mx-auto">
             Schedule a visit to our Hyderabad office for detailed trade discussions,
             machinery assessments, or associate partnerships.

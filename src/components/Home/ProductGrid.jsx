@@ -78,55 +78,61 @@ export const ProductGrid = () => {
   ];
 
   return (
-    <section className="w-[95%] mx-auto py-16">
-      {/* Header with Darker Pink Accent */}
-      <div className="mb-12 px-4 flex justify-between items-end">
-        <div>
-          <span className="text-[#4A4A4A] font-extrabold text-sm uppercase tracking-[0.4em] mb-2 block">Available Inventory</span>
-          <h2 className="text-4xl font-extrabold text-[#4A4A4A] er uppercase">Market <span className="text-[#4A4A4A]">Gallery</span></h2>
+  <section className="w-[95%] mx-auto py-12">
+    
+    {/* Header */}
+    <div className="mb-8 px-2 flex items-center justify-between">
+      <div>
+        <span className="text-gray-500 font-semibold text-xs uppercase tracking-wider block mb-1">
+          Available Inventory
+        </span>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+          Market Gallery
+        </h2>
+      </div>
+      <div className="hidden md:block h-px flex-1 bg-gray-200 ml-6"></div>
+    </div>
+
+    {/* Grid Layout */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {products.map((p) => (
+        <div
+          key={p.id}
+          className="bg-white border border-gray-200 rounded-md overflow-hidden hover:shadow-md transition"
+        >
+          {/* Image */}
+          <div className="w-full h-[220px] overflow-hidden">
+            <img
+              src={p.img}
+              alt={p.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* Content */}
+          <div className="p-4">
+            <span className="text-xs text-gray-500 uppercase font-medium">
+              {p.cat}
+            </span>
+
+            <h4 className="text-gray-800 font-semibold text-sm mt-1">
+              {p.title}
+            </h4>
+
+            <p className="text-gray-400 text-xs mt-1">
+              Ready for e-Auction
+            </p>
+
+            {/* Action */}
+            <div className="mt-3">
+              <button className="text-sm font-medium text-[#a58c67] hover:underline">
+                View Details →
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="hidden md:block h-px flex-1 bg-gray-100 mx-10 mb-3"></div>
-      </div>
-
-      {/* Pinterest Style Masonry Grid */}
-      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-8 space-y-8">
-        {products.map((p, index) => (
-          <motion.div
-            key={p.id}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.05 }}
-            className="group relative break-inside-avoid rounded-[2.5rem] overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-[#D48282]/20 transition-all duration-500 cursor-pointer"
-          >
-            {/* Category Tag (Floating) */}
-            <div className="absolute top-5 left-5 z-10">
-              <span className="bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-[9px] font-extrabold text-[#4A4A4A] uppercase tracking-wider shadow-sm">
-                {p.cat}
-              </span>
-            </div>
-
-            {/* Image Section */}
-            <div className="overflow-hidden">
-              <img
-                src={p.img}
-                alt={p.title}
-                className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out"
-              />
-            </div>
-
-            {/* Content Section */}
-            <div className="p-7">
-              <h4 className="text-[#4A4A4A] font-extrabold text-xl leading-tight group-hover:text-[#4A4A4A] transition-colors">{p.title}</h4>
-              <p className="text-gray-400 text-sm mt-2 font-bold uppercase tracking-wider">Ready for <span className="normal-case">e-Auction</span></p>
-
-              <div className="mt-5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-[#4A4A4A] text-sm font-extrabold uppercase">View Details</span>
-                <div className="h-1 w-8 bg-[#D48282] rounded-full"></div>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </section>
-  );
+      ))}
+    </div>
+  </section>
+);
 };
