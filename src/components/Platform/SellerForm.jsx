@@ -16,7 +16,7 @@ export const SellerForm = () => {
         type={type}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/20 focus:border-[#a58c67] transition-all text-sm font-medium"
+        className="w-full p-4 bg-[#FFF0F5]/20  rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/20 focus:border-[#a58c67] transition-all text-sm font-medium"
       />
     </div>
   );

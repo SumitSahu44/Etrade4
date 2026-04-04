@@ -6,7 +6,7 @@ export const LiveChat = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-10 right-6 z-[100] flex flex-col items-end gap-3">
+    <div className="fixed bottom-10 right-5 z-[100] flex flex-col items-end gap-3">
 
       {/* CHAT BOX */}
       <AnimatePresence>

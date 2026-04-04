@@ -60,7 +60,7 @@ function App() {
           href="https://wa.me/91XXXXXXXXXX"
           target="_blank"
           rel="noopener noreferrer"
-          className="fixed bottom-26 right-5  z-50 bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition-all border-4 border-white"
+          className="fixed bottom-26 right-5  z-50 bg-[#25D366] p-3 rounded-full shadow-2xl hover:scale-110 transition-all border-4 border-white"
         >
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" className="w-6 h-6" alt="WA" />
         </a>

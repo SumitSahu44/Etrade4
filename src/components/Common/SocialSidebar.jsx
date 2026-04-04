@@ -3,7 +3,7 @@ import React from 'react';
 import { Facebook, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 
 export const SocialSidebar = () => (
-  <div className="fixed left-6 top-1/2 -translate-y-1/2 z-[100] hidden lg:flex flex-col gap-4">
+  <div className="fixed left-1 top-1/2 -translate-y-1/2 z-[100] hidden lg:flex flex-col gap-4">
     {[
       { Icon: Facebook, color: 'hover:bg-blue-600' },
       { Icon: Twitter, color: 'hover:bg-sky-500' },

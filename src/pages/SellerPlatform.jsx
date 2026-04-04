@@ -93,7 +93,17 @@ export const SellerPlatform = () => {
 
 
 
-      
+    <div className="max-w-4xl mx-auto mt-16 p-8 bg-white/50 rounded-[2rem] border border-pink-100 text-center">
+  <h4 className="text-sm font-extrabold text-[#4A4A4A] uppercase  mb-4">
+    <span className="normal-case">Bulk Textile Seller</span> Terms
+  </h4>
+  
+  <p className="text-sm text-gray-800  tracking-wide font-bold">
+    All sellers must be verified by our authorized team before listing products.
+    Incomplete business documents such as GST, MSME, or company details will lead to rejection.
+    Sellers must ensure product authenticity, bulk availability, and timely communication with buyers.
+  </p>
+</div>
     </div>
   );
 };
