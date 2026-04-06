@@ -53,7 +53,7 @@ export default function Header() {
     <h1 className="flex flex-col text-[13px] md:text-[15px] lg:text-[17px] font-extrabold tracking-tight text-[#222] group-hover:text-[#a58c67] transition-colors">
       
       {/* Line 1 */}
-      <span>
+      <span className='font-bold'>
         PAREKH <span className="text-[#a58c67]">e-TRADE</span>
       </span>
 
