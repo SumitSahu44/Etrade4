@@ -34,7 +34,7 @@ export const Hero = () => {
           <div className="mt-6 flex gap-4 flex-wrap">
             <Link
               to="/products"
-              className="bg-[#a58c67] text-white px-6 py-3 text-sm font-semibold rounded-md hover:bg-[#a50e40] transition flex items-center gap-2"
+              className="bg-[#a58c67] text-white px-6 py-3 text-sm font-semibold rounded-md hover:transition flex items-center gap-2"
             >
               Explore Market
               <ArrowRight size={16} />
