@@ -9,26 +9,57 @@ export const SellerForm = () => {
   };
 
   const InputGroup = ({ label, name, type = "text", placeholder }) => (
-    <div className="flex flex-col gap-2">
-      <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">{label}</label>
+    <div className="flex flex-col gap-1">
+      <label className="text-sm font-medium text-gray-700">
+        {label}
+      </label>
       <input
         name={name}
         type={type}
         onChange={handleChange}
         placeholder={placeholder}
-        className="w-full p-4 bg-[#FFF0F5]/20  rounded-[1.2rem] focus:outline-none focus:ring-2 focus:ring-[#a58c67]/20 focus:border-[#a58c67] transition-all text-sm font-medium"
+        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg
+        focus:outline-none focus:ring-2 focus:ring-[#a58c67]/30 focus:border-[#a58c67]
+        text-sm text-gray-800 transition"
       />
     </div>
   );
 
+  const SelectGroup = ({ label, name, options }) => (
+    <div className="flex flex-col gap-1">
+      <label className="text-sm font-medium text-gray-700">
+        {label}
+      </label>
+      <select
+        name={name}
+        onChange={handleChange}
+        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg
+        focus:outline-none focus:ring-2 focus:ring-[#a58c67]/30 focus:border-[#a58c67]
+        text-sm text-gray-800"
+      >
+        {options.map((opt, i) => (
+          <option key={i}>{opt}</option>
+        ))}
+      </select>
+    </div>
+  );
+
   return (
-    <div className="max-w-5xl mx-auto bg-white p-10 rounded-[3rem] shadow-2xl shadow-pink-100/50 border border-pink-50">
-      <div className="flex justify-between items-center mb-10 border-b border-pink-50 pb-6">
-        <h2 className="text-3xl font-extrabold text-[#4A4A4A]">Seller's <span className="text-[#a58c67]">Portal</span></h2>
-        <span className="text-sm bg-[#a58c67] text-white px-4 py-1 rounded-full font-bold uppercase tracking-wider">Registration Form</span>
+    <div className="max-w-6xl mx-auto bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-gray-100">
+
+      {/* Header */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-800">
+          Seller Portal
+        </h2>
+        <p className="text-sm text-gray-500 mt-1">
+          Fill the details below to register as a seller.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Form */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
         <InputGroup label="Authorized Official Name" name="official_name" />
         <InputGroup label="Code No." name="code_no" />
         <InputGroup label="Name of the Seller" name="seller_name" />
@@ -41,69 +72,77 @@ export const SellerForm = () => {
           <InputGroup label="Address of the Business" name="address" />
         </div>
 
-        {/* Category of Business - Dropdown */}
-        <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Category of Business</label>
-          <select name="category" onChange={handleChange} className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] outline-none text-sm font-bold text-[#4A4A4A]">
-            <option>Proprietorship</option>
-            <option>Partnership</option>
-            <option>LLP</option>
-            <option>Private Limited</option>
-            <option>Ltd.</option>
-            <option>Other</option>
-          </select>
-        </div>
+        <SelectGroup
+          label="Category of Business"
+          name="category"
+          options={["Proprietorship", "Partnership", "LLP", "Private Limited", "Ltd.", "Other"]}
+        />
 
-        {/* Nature of Business - Dropdown */}
-        <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Nature of Business</label>
-          <select name="nature" onChange={handleChange} className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] outline-none text-sm font-bold text-[#4A4A4A]">
-            <option>Retailer</option>
-            <option>Wholesaler</option>
-            <option>Manufacturer</option>
-          </select>
-        </div>
+        <SelectGroup
+          label="Nature of Business"
+          name="nature"
+          options={["Retailer", "Wholesaler", "Manufacturer"]}
+        />
 
-        <InputGroup label="Membership No. in Chamber of Textile (if any)" name="membership_no" />
+        <InputGroup
+          label="Membership No. in Chamber of Textile (if any)"
+          name="membership_no"
+        />
 
-        {/* Upload Section */}
-        <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
-          <div className="relative group">
-            <input type="file" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
-            <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#a58c67] transition-all">
-              <Upload size={18} className="mx-auto text-[#4A4A4A] mb-1" />
-              <span className="text-sm font-bold text-gray-500 uppercase">Choose File</span>
+        {/* Upload */}
+        <div className="flex flex-col gap-1">
+          <label className="text-sm font-medium text-gray-700">
+            Upload Documents
+          </label>
+          <div className="relative">
+            <input
+              type="file"
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+            />
+            <div className="flex flex-col items-center justify-center px-4 py-6 border border-dashed border-gray-300 rounded-lg text-gray-500 hover:border-[#a58c67] transition">
+              <Upload size={18} />
+              <span className="text-xs mt-1">
+                GST / MSME / CIN documents
+              </span>
             </div>
           </div>
         </div>
 
-        {/* Roll-down mode items */}
-        <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Textile Items to Sell</label>
-          <select name="items_to_sell" onChange={handleChange} className="w-full p-4 bg-[#a58c67] text-white rounded-[1.2rem] outline-none text-sm font-bold">
-            <option>Textile Raw Materials</option>
-            <option>Textile Finished Products</option>
-            <option>Textile Machineries</option>
-            <option>Textile Spares</option>
-          </select>
-        </div>
+        <SelectGroup
+          label="Textile Items to Sell"
+          name="items_to_sell"
+          options={[
+            "Textile Raw Materials",
+            "Textile Finished Products",
+            "Textile Machineries",
+            "Textile Spares",
+          ]}
+        />
 
         <div className="md:col-span-2 lg:col-span-3">
-          <InputGroup label="Description of items to Sell" name="description" placeholder="Specify details, quality, etc." />
+          <InputGroup
+            label="Description of items to Sell"
+            name="description"
+            placeholder="Specify details, quality, etc."
+          />
         </div>
 
         <InputGroup label="Total Qty for selling" name="qty" />
         <InputGroup label="Expected Rate for selling" name="rate" />
       </div>
 
-      {/* Action Buttons */}
-      <div className="mt-12 flex flex-wrap gap-4 justify-center">
-        <button className="flex items-center gap-2 bg-[#FFF0F5] text-[#4A4A4A] px-10 py-4 rounded-full font-extrabold text-sm uppercase tracking-wider hover:bg-[#a58c67] hover:text-white transition-all">
+      {/* Buttons */}
+      <div className="mt-10 flex justify-end gap-4">
+        <button
+          className="flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-lg text-gray-600 text-sm hover:bg-gray-100 transition"
+        >
           <Eye size={16} /> Preview
         </button>
-        <button className="flex items-center gap-2 bg-[#a58c67] text-white px-12 py-4 rounded-full font-extrabold text-sm uppercase tracking-wider hover:bg-black transition-all shadow-xl shadow-pink-100">
-          <Send size={16} /> Submit Form
+
+        <button
+          className="flex items-center gap-2 px-6 py-3 bg-[#a58c67] text-white rounded-lg text-sm hover:bg-black transition shadow"
+        >
+          <Send size={16} /> Submit
         </button>
       </div>
     </div>
