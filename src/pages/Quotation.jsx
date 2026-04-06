@@ -2,7 +2,7 @@ import React from 'react';
 import { FileText, Send, Info, User, Building2, MapPin, Hash, Phone, Mail, ChevronDown } from 'lucide-react';
 
 export const Quotation = () => {
-  const labelClass = "text-[10px] font-black text-gray-500 uppercase tracking-[0.2em] ml-2 mb-1";
+  const labelClass = "text-[10px] font-black text-gray-500 uppercase tracking-[0.1em] ml-2 mb-1";
   const inputClass = "p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#a58c67]/20 text-sm font-bold text-gray-700 transition-all w-full";
 
   return (
@@ -24,7 +24,7 @@ export const Quotation = () => {
               <div className="mt-8 p-6 bg-white rounded-3xl border border-pink-100 shadow-sm relative overflow-hidden group">
                 <div className="absolute top-0 left-0 w-1 h-full bg-[#a58c67]"></div>
                 <Info className="text-[#a58c67] mb-3" size={24} />
-                <p className="text-[10px] font-black text-gray-400 uppercase leading-relaxed tracking-wider">
+                <p className="text-[10px] font-black text-gray-500 uppercase leading-relaxed tracking-wider">
                   Validity Note: Quotations are valid for 7 days due to market price fluctuations in the textile industry.
                 </p>
               </div>
@@ -98,7 +98,7 @@ export const Quotation = () => {
                     <option>Quotation for sell our Finished Textile Products</option>
                     <option>Quotation for sell or Raw Textile Products</option>
                   </select>
-                  <ChevronDown size={16} className="absolute right-4 text-gray-400 pointer-events-none" />
+                  <ChevronDown size={16} className="absolute right-4 text-gray-500 pointer-events-none" />
                 </div>
               </div>
 

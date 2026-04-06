@@ -22,7 +22,7 @@ export const TenderSection = () => {
               </div>
               <div className="text-right">
                 <span className={`px-3 py-1 rounded-full text-sm font-extrabold uppercase ${t.status === 'Live' ? 'bg-green-500 animate-pulse' : 'bg-[#D48282]'}`}>{t.status}</span>
-                <p className="text-sm text-gray-400 mt-2 flex items-center gap-1 justify-end"><Clock size={10} /> {t.end}</p>
+                <p className="text-sm text-gray-500 mt-2 flex items-center gap-1 justify-end"><Clock size={10} /> {t.end}</p>
               </div>
             </div>
           ))}

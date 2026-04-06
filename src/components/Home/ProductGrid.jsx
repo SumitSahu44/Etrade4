@@ -119,7 +119,7 @@ export const ProductGrid = () => {
               {p.title}
             </h4>
 
-            <p className="text-gray-400 text-xs mt-1">
+            <p className="text-gray-500 text-xs mt-1">
               Ready for e-Auction
             </p>
 

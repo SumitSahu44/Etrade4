@@ -14,7 +14,7 @@ export const News = ({ title }) => {
             <div className="p-8">
               <span className="text-sm font-bold text-[#4A4A4A] uppercase tracking-wider">March 2026</span>
               <h4 className="text-lg font-bold text-[#4A4A4A] mt-2 leading-tight">Latest Trends in Industrial Textile Machineries</h4>
-              <p className="text-sm text-gray-400 mt-4 line-clamp-2">Exploring how Parekh e-Trade is revolutionizing the supply chain...</p>
+              <p className="text-sm text-gray-500 mt-4 line-clamp-2">Exploring how Parekh e-Trade is revolutionizing the supply chain...</p>
               <button className="mt-6 text-[#4A4A4A] font-extrabold text-sm uppercase tracking-wider border-b-2 border-[#a58c67]">Read Full</button>
             </div>
           </div>

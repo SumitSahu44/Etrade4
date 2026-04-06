@@ -14,12 +14,20 @@ export const Footer = () => (
         {/* Brand & Mission */}
         <div className="space-y-8">
           <Link to="/" className="flex flex-col group">
-            <h2 className="text-3xl font-[1000]  uppercase ">
-              PAREKH <span className="text-[#a58c67] normal-case">e-Trade</span>
-            </h2>
-            <p className="text-sm font-bold tracking-[0.4em] text-gray-500">MARKET (TEXTILE)</p>
-          </Link>
-          <p className="text-gray-400 text-sm leading-relaxed font-medium">
+             <h1 className="flex flex-col text-[13px] md:text-[15px] lg:text-[17px] font-extrabold tracking-tight text-[#fff] transition-colors">
+      
+      {/* Line 1 */}
+      <span className='font-[1000]'>
+        PAREKH <span className="text-[#a58c67]">e-TRADE</span>
+      </span>
+
+      {/* Line 2 */}
+      <span className="text-[11px] md:text-[12px] lg:text-[13px] font-semibold text-gray-500">
+        MARKET (TEXTILE)
+      </span>
+
+    </h1> </Link>
+          <p className="text-gray-500 text-sm leading-relaxed font-medium">
             India's premier B2B marketplace for the textile industry. Empowering manufacturers, wholesalers, and retailers through transparent digital trade solutions.
           </p>
           <div className="flex gap-4">
@@ -34,7 +42,7 @@ export const Footer = () => (
         {/* e-Services & Platforms */}
         <div>
           <h4 className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#a58c67] mb-8"><span className="normal-case">e-Services</span></h4>
-          <ul className="grid gap-4 text-sm font-bold text-gray-400">
+          <ul className="grid gap-4 text-sm font-bold text-gray-500">
             <li><Link to="/auction" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#a58c67] group-hover:scale-110 transition-transform" /> e-Auction Portal</Link></li>
             <li><Link to="/quotation" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#a58c67] group-hover:scale-110 transition-transform" /> e-Quotation</Link></li>
             <li><Link to="/tenders" className="hover:text-white transition-colors flex items-center gap-2 group"><ExternalLink size={14} className="text-[#a58c67] group-hover:scale-110 transition-transform" /> Tenders & Contracts</Link></li>
@@ -47,7 +55,7 @@ export const Footer = () => (
         {/* Quick Links */}
         <div>
           <h4 className="text-sm font-extrabold uppercase tracking-[0.3em] text-[#a58c67] mb-8">Company</h4>
-          <ul className="grid grid-cols-2 gap-4 text-sm font-bold text-gray-400">
+          <ul className="grid grid-cols-2 gap-4 text-sm font-bold text-gray-500">
             <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
             <li><Link to="/management" className="hover:text-white transition-colors">Management</Link></li>
             <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li>
@@ -67,11 +75,11 @@ export const Footer = () => (
             <div className="space-y-4">
               <div className="flex gap-4 items-start">
                 <MapPin className="text-[#a58c67] shrink-0" size={18} />
-                <p className="text-sm font-medium text-gray-400 leading-relaxed uppercase">Hyderabad, TG, India</p>
+                <p className="text-sm font-medium text-gray-500 leading-relaxed uppercase">Hyderabad, TG, India</p>
               </div>
               <div className="flex gap-4 items-center">
                 <Mail className="text-[#a58c67] shrink-0" size={18} />
-                <p className="text-sm font-medium text-gray-400 transition-colors hover:text-white cursor-pointer">e-trade@parekhtrade.com</p>
+                <p className="text-sm font-medium text-gray-500 transition-colors hover:text-white cursor-pointer">e-trade@parekhtrade.com</p>
               </div>
             </div>
           </div>

@@ -2,43 +2,61 @@ import React from 'react';
 import { Gavel, User, Building2, MapPin, Hash, Phone, Mail, Upload, AlertCircle, ShieldCheck } from 'lucide-react';
 
 export const Auction = () => {
-  const labelClass = "text-[10px] font-black text-gray-500 uppercase tracking-[0.2em] ml-2 mb-1";
+  const labelClass = "text-[10px] font-black text-gray-500 uppercase tracking-[0.1em] ml-2 mb-1";
   const inputClass = "p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#a58c67]/20 text-sm font-bold text-gray-800 transition-all w-full";
 
   return (
     <div className="min-h-screen pb-20 bg-white font-sans">
       {/* Header */}
-      <section className="py-20 bg-[#4A4A4A] text-white text-center rounded-b-[4rem] relative overflow-hidden shadow-2xl">
-        <div className="relative z-10">
-          <div className="flex justify-center mb-4">
-            <div className="bg-[#a58c67] p-4 rounded-full shadow-xl">
-              <Gavel size={32} />
-            </div>
-          </div>
-          <h1 className="text-5xl font-extrabold uppercase tracking-tighter">
-            Live <span className="text-[#a58c67] normal-case text-gray-500">e-Auction</span>
-          </h1>
-          
-          {/* CRITICAL LINE: NO AUCTION PUBLISHED */}
-          <div className="mt-8 inline-flex items-center gap-3 bg-red-500/10 border border-red-500/20 px-6 py-3 rounded-2xl">
-            <AlertCircle size={18} className="text-red-400" />
-            <span className="text-sm font-black text-red-400  tracking-widest text-gray-500">
-              At present, No e-Auction published
-            </span>
-          </div>
-        </div>
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
-      </section>
+    <section className="py-20 text-white text-center rounded-b-[4rem] relative overflow-hidden shadow-2xl">
+
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <img
+      src="/images/auction.png" // 👉 apni image ka path yaha daalo
+      alt="auction background"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-[#4A4A4A]/80"></div>
+
+  {/* Content */}
+  <div className="relative z-10">
+    <div className="flex justify-center mb-4">
+      <div className="bg-[#a58c67] p-4 rounded-full shadow-xl">
+        <Gavel size={32} />
+      </div>
+    </div>
+
+    <h1 className="text-5xl font-extrabold uppercase tracking-tighter">
+      Live <span className="text-[#a58c67] normal-case">e-Auction</span>
+    </h1>
+    
+    {/* Alert */}
+    <div className="mt-8 inline-flex items-center gap-3 bg-red-500/10 border border-red-500/20 px-6 py-3 rounded-2xl backdrop-blur-md">
+      <AlertCircle size={18} className="text-red-400" />
+      <span className="text-sm font-black text-red-400 tracking-widest">
+        At present, No e-Auction published
+      </span>
+    </div>
+  </div>
+
+  {/* Glow Effect */}
+  <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+
+</section>
 
       <div className="max-w-6xl mx-auto px-6 mt-16">
         
         {/* --- E-AUCTION REGISTRATION FORM --- */}
         <div className="bg-white p-10 md:p-16 rounded-[4rem] shadow-2xl border border-pink-50 relative">
           <div className="mb-10 border-b border-pink-100 pb-8">
-            <h2 className="text-3xl font-black text-[#4A4A4A] uppercase tracking-tighter">
+            <h2 className="text-3xl font-black text-[#4A4A4A]">
               Auction <span className="text-[#a58c67]">Participation</span>
             </h2>
-            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-2 text-gray-500">
+            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-2 text-gray-500">
               Register now to get notified for upcoming textile auctions
             </p>
           </div>
@@ -102,7 +120,7 @@ export const Auction = () => {
             <div className="flex flex-col gap-1">
               <label className={labelClass}>Upload GST Certificate</label>
               <label className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl cursor-pointer border-2 border-dashed border-gray-200 hover:bg-gray-100 transition-all">
-                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest flex items-center gap-2">
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-widest flex items-center gap-2">
                   <Upload size={16} /> Choose File (PDF/JPG)
                 </span>
                 <input type="file" className="hidden" />

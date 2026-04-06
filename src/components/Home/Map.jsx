@@ -2,10 +2,10 @@ import React from "react";
 
 export default function MapVideo() {
   return (
-    <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+    <div  style={{ maxWidth: "900px", margin: "0 auto" }}>
       
       {/* Optional Heading */}
-      <div style={{ textAlign: "center", marginBottom: "10px" }}>
+      <div  className="mt-14" style={{ textAlign: "center", marginBottom: "10px" }}>
         <h2 style={{ fontSize: "20px", fontWeight: "700" }}>
         Textile Associations
         </h2>

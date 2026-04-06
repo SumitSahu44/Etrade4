@@ -20,11 +20,34 @@ export const Management = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-[#4A4A4A] py-24 text-white text-center">
-        <span className="text-[#a58c67] font-extrabold text-sm uppercase tracking-[0.5em]">Executive Leadership</span>
-        <h1 className="text-5xl font-extrabold mt-4 uppercase er">Our <span className="text-[#a58c67]">Management</span></h1>
-        <div className="h-1.5 w-24 bg-[#a58c67] mx-auto mt-6 rounded-full"></div>
-      </section>
+    <section className="relative py-24 text-white text-center overflow-hidden">
+
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <img
+      src="https://plus.unsplash.com/premium_photo-1664299852788-5a24db0d7e05?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dGV4dGlsZXxlbnwwfHwwfHx8MA%3D%3D" // 👉 apni image ka path yaha daalo
+      alt="background"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-[#4A4A4A]/95"></div>
+
+  {/* Content */}
+  <div className="relative z-10">
+    <span className="text-[#a58c67] font-extrabold text-sm uppercase tracking-[0.5em]">
+      Executive Leadership
+    </span>
+
+    <h1 className="text-5xl font-extrabold mt-4 uppercase">
+      Our <span className="text-[#a58c67]">Management</span>
+    </h1>
+
+    <div className="h-1.5 w-24 bg-[#a58c67] mx-auto mt-6 rounded-full"></div>
+  </div>
+
+</section>
 
       {/* Philosophy Section */}
       <section className="py-24 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -40,20 +63,20 @@ export const Management = () => {
               <div className="p-3 bg-pink-50 rounded-xl"><Target size={20} className="text-[#a58c67]" /></div>
               <div>
                 <h4 className="font-bold text-[#4A4A4A]">Integrity</h4>
-                <p className="text-sm text-gray-400 font-bold uppercase mt-1">First Priority</p>
+                <p className="text-sm text-gray-500 font-bold uppercase mt-1">First Priority</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <div className="p-3 bg-pink-50 rounded-xl"><Users size={20} className="text-[#a58c67]" /></div>
               <div>
                 <h4 className="font-bold text-[#4A4A4A]">Innovation</h4>
-                <p className="text-sm text-gray-400 font-bold uppercase mt-1">Modern Trade</p>
+                <p className="text-sm text-gray-500 font-bold uppercase mt-1">Modern Trade</p>
               </div>
             </div>
           </div>
         </div>
         <div className="relative">
-          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1000" className="rounded-[4rem] grayscale-0 hover:grayscale transition-all duration-700 shadow-2xl" alt="Office" />
+          <img src="https://images.unsplash.com/photo-1542044801-30d3e45ae49a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGV4dGlsZXxlbnwwfHwwfHx8MA%3D%3D" className="rounded-[4rem] grayscale-0 hover:grayscale transition-all duration-700 shadow-2xl" alt="Office" />
           <div className="absolute -bottom-10 -left-10 bg-[#a58c67] p-10 rounded-[3rem] text-white hidden lg:block">
             <h4 className="text-4xl font-extrabold">25+</h4>
             <p className="text-sm font-bold uppercase tracking-wider opacity-60">Years of Experience</p>
@@ -75,7 +98,7 @@ export const Management = () => {
                 </div>
                 <h3 className="text-2xl font-extrabold text-[#4A4A4A] mt-8">{leader.name}</h3>
                 <p className="text-[#a58c67] text-sm font-extrabold uppercase tracking-wider mt-2">{leader.role}</p>
-                <p className="mt-6 text-gray-400 font-medium leading-relaxed">{leader.bio}</p>
+                <p className="mt-6 text-gray-500 font-medium leading-relaxed">{leader.bio}</p>
               </div>
             ))}
           </div>

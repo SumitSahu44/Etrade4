@@ -10,9 +10,9 @@ export const Careers = () => (
       
       <div className="mt-12 p-10 bg-[#FDF2F2] rounded-[3rem] border-2 border-dashed border-pink-200">
         <h4 className="text-xl font-bold text-[#4A4A4A]">Current Openings</h4>
-        <p className="text-gray-400 mt-2  text-sm">No active positions at the moment.</p>
+        <p className="text-gray-500 mt-2  text-sm">No active positions at the moment.</p>
         <hr className="my-8 border-pink-100" />
-        <p className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Drop your CV for future reference</p>
+        <p className="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">Drop your CV for future reference</p>
         <a href="mailto:careers@parekhtrade.com" className="inline-flex items-center gap-2 bg-[#a58c67] text-white px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-black transition-all shadow-lg">
           <Mail size={14} /> Send Resume
         </a>

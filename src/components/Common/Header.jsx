@@ -65,7 +65,7 @@ export default function Header() {
     </h1>
 
     {/* Sub Text */}
-    <p className="text-[9px] md:text-[10px] font-semibold tracking-wider text-gray-400 uppercase">
+    <p className="text-[9px] md:text-[10px] font-semibold tracking-wider text-gray-500 uppercase">
       HYDERABAD, TG, INDIA
     </p>
   </div>
@@ -156,7 +156,7 @@ export default function Header() {
             </Link>
 
             <div className="mt-8 text-center pb-10">
-               <p className="text-[10px] text-gray-400 font-medium">© 2026 PAREKH e-TRADE MARKET</p>
+               <p className="text-[10px] text-gray-500 font-medium">© 2026 PAREKH e-TRADE MARKET</p>
             </div>
           </div>
         </div>

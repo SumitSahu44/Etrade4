@@ -73,7 +73,7 @@ export const Home = () => {
             {['New GST Norms for Raw Material', 'e-Auction Schedule Oct 2026', 'Tender Submission Guide'].map((item, i) => (
               <li key={i} className="group cursor-pointer">
                 <p className="text-sm font-bold text-[#4A4A4A] group-hover:text-[#4A4A4A] transition-colors">{item}</p>
-                <span className="text-sm text-gray-400 font-medium ">Published: 2 days ago</span>
+                <span className="text-sm text-gray-500 font-medium ">Published: 2 days ago</span>
               </li>
             ))}
           </ul>
@@ -90,14 +90,14 @@ export const Home = () => {
                   <img src="https://images.unsplash.com/photo-1622532470022-24107cac5ef3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGV4dGlsZSUyMGZhYnJpY3xlbnwwfHwwfHx8MA%3D%3D" className="w-full h-full object-cover opacity-100 hover:opacity-90 transition-opacity" alt="Blog" />
                 </div>
                 <h4 className="font-bold text-lg leading-snug">The Future of Sustainable Weaving in India</h4>
-                <p className="text-sm text-gray-400">Discover how modern machineries are reducing waste...</p>
+                <p className="text-sm text-gray-500">Discover how modern machineries are reducing waste...</p>
               </div>
               <div className="space-y-4">
                 <div className="h-40 bg-white/10 rounded-2xl overflow-hidden">
                   <img src="https://images.unsplash.com/photo-1630920501459-f3e99320c4a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRleHRpbGUlMjBmYWJyaWN8ZW58MHx8MHx8fDA%3D" className="w-full h-full object-cover opacity-100 hover:opacity-90 transition-opacity" alt="Blog" />
                 </div>
                 <h4 className="font-bold text-lg leading-snug">Global Demand for Pure Cotton Trends</h4>
-                <p className="text-sm text-gray-400">Export opportunities for verified manufacturers...</p>
+                <p className="text-sm text-gray-500">Export opportunities for verified manufacturers...</p>
               </div>
             </div>
           </div>

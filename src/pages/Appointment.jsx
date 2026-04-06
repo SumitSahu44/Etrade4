@@ -8,7 +8,7 @@ export const AppointmentPage = () => {
         <div className="text-center mb-16">
           <span className="text-sm font-extrabold text-[#a58c67] uppercase tracking-[0.5em]">Visit Our Facility</span>
           <h1 className="text-4xl font-extrabold text-[#4A4A4A] mt-4 uppercase er">Book an <span className="text-[#a58c67]">Official Meeting</span></h1>
-          <p className="text-gray-400 font-medium mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-500 font-medium mt-4 max-w-2xl mx-auto">
             Schedule a visit to our Hyderabad office for detailed trade discussions,
             machinery assessments, or associate partnerships.
           </p>
@@ -23,7 +23,7 @@ export const AppointmentPage = () => {
           </div>
           <div className="p-8 bg-white rounded-[2rem] border border-pink-50 text-center">
             <h4 className="font-bold text-[#4A4A4A] mb-2 uppercase text-sm tracking-wider">Location</h4>
-            <p className="text-sm text-gray-500">Hyderabad, Telangana, 500001</p>
+            <p className="text-sm text-gray-500">Hyderabad, TG, INDIA</p>
           </div>
           <div className="p-8 bg-white rounded-[2rem] border border-pink-50 text-center">
             <h4 className="font-bold text-[#4A4A4A] mb-2 uppercase text-sm tracking-wider">Support</h4>

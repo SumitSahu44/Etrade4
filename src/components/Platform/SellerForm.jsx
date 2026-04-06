@@ -10,7 +10,7 @@ export const SellerForm = () => {
 
   const InputGroup = ({ label, name, type = "text", placeholder }) => (
     <div className="flex flex-col gap-2">
-      <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">{label}</label>
+      <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">{label}</label>
       <input
         name={name}
         type={type}
@@ -43,7 +43,7 @@ export const SellerForm = () => {
 
         {/* Category of Business - Dropdown */}
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">Category of Business</label>
+          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Category of Business</label>
           <select name="category" onChange={handleChange} className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] outline-none text-sm font-bold text-[#4A4A4A]">
             <option>Proprietorship</option>
             <option>Partnership</option>
@@ -56,7 +56,7 @@ export const SellerForm = () => {
 
         {/* Nature of Business - Dropdown */}
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">Nature of Business</label>
+          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Nature of Business</label>
           <select name="nature" onChange={handleChange} className="w-full p-4 bg-[#FFF0F5]/20 border border-pink-50 rounded-[1.2rem] outline-none text-sm font-bold text-[#4A4A4A]">
             <option>Retailer</option>
             <option>Wholesaler</option>
@@ -68,19 +68,19 @@ export const SellerForm = () => {
 
         {/* Upload Section */}
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
+          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Upload Documents (GST, MSME, Trade License, Labour License, LLP, CIN)</label>
           <div className="relative group">
             <input type="file" className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
             <div className="p-4 bg-white border-2 border-dashed border-pink-100 rounded-[1.2rem] text-center group-hover:border-[#a58c67] transition-all">
               <Upload size={18} className="mx-auto text-[#4A4A4A] mb-1" />
-              <span className="text-sm font-bold text-gray-400 uppercase">Choose File</span>
+              <span className="text-sm font-bold text-gray-500 uppercase">Choose File</span>
             </div>
           </div>
         </div>
 
         {/* Roll-down mode items */}
         <div className="flex flex-col gap-2">
-          <label className="text-sm font-extrabold text-gray-400 uppercase  ml-1">Textile Items to Sell</label>
+          <label className="text-sm font-extrabold text-gray-500 uppercase  ml-1">Textile Items to Sell</label>
           <select name="items_to_sell" onChange={handleChange} className="w-full p-4 bg-[#a58c67] text-white rounded-[1.2rem] outline-none text-sm font-bold">
             <option>Textile Raw Materials</option>
             <option>Textile Finished Products</option>

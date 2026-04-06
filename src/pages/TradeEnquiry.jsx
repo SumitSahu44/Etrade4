@@ -2,7 +2,7 @@ import React from 'react';
 import { Send, User, Building2, MapPin, Hash, Phone, Mail, ChevronDown } from 'lucide-react';
 
 export const TradeEnquiry = () => {
-  const labelClass = "text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] ml-2 mb-1";
+  const labelClass = "text-[10px] font-black text-gray-500 uppercase tracking-[0.1em] ml-2 mb-1";
   const inputClass = "p-4 bg-gray-50 rounded-2xl border-none outline-none focus:ring-2 focus:ring-[#a58c67]/20 text-sm font-bold text-gray-700 placeholder:text-gray-500 transition-all";
 
   return (
@@ -85,7 +85,7 @@ export const TradeEnquiry = () => {
                    <option>For Textile Machinery Buy</option>
                    <option>Others</option>
                 </select>
-                <ChevronDown size={16} className="absolute right-4 text-gray-400 pointer-events-none" />
+                <ChevronDown size={16} className="absolute right-4 text-gray-500 pointer-events-none" />
              </div>
           </div>
 

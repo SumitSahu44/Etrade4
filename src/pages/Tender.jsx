@@ -22,13 +22,13 @@ export const Tenders = () => {
                 {item.type === 'Auction' ? <Gavel /> : <ShieldCheck />}
               </div>
               <div>
-                <span className="text-sm font-bold text-gray-400 uppercase tracking-wider">{item.id}</span>
+                <span className="text-sm font-bold text-gray-500 uppercase tracking-wider">{item.id}</span>
                 <h3 className="text-xl font-extrabold text-[#4A4A4A]">{item.title}</h3>
               </div>
             </div>
             <div className="flex items-center gap-6 mt-4 md:mt-0">
               <div className="text-right">
-                <p className="text-sm font-bold text-gray-400 uppercase">Closing Date</p>
+                <p className="text-sm font-bold text-gray-500 uppercase">Closing Date</p>
                 <p className="font-bold text-[#4A4A4A]">{item.date}</p>
               </div>
               <button className="bg-[#4A4A4A] text-white p-4 rounded-2xl hover:bg-black transition-all">
