@@ -88,7 +88,7 @@ export const Management = () => {
       <section className="py-24 bg-gray-50/50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-extrabold text-[#4A4A4A] uppercase">The <span className="text-[#a58c67]">Pioneers</span></h2>
+            <h2 className="text-3xl font-extrabold text-[#4A4A4A] uppercase">Our <span className="text-[#a58c67]">Team</span></h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {leaders.map((leader, i) => (
