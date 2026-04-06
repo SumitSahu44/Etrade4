@@ -27,7 +27,7 @@ export default function Header() {
   { name: 'Blog', path: '/blog', icon: <MessageSquare size={14} /> },
   { name: 'Visit with Appointment', path: '/appointment', icon: <Calendar size={14} /> },
   { name: 'Media Gallery', path: '/media', icon: <Image size={14} /> },
-  { name: 'Textile Associates', path: '/textile-map', icon: <Globe size={14} /> },
+  { name: 'Our Textile Associates', path: '/textile-map', icon: <Globe size={14} /> },
 ];
 
   return (
