@@ -104,8 +104,8 @@ export default function Header() {
   </div>
 
   {/* Buyer / Seller */}
-  <Link to="/buyer" className="hover:text-[#a58c67]">BUYER’S PLATFORM</Link>
-  <Link to="/seller" className="hover:text-[#a58c67]">SELLER’S PLATFORM</Link>
+  <Link to="/buyer" className="hover:text-[#a58c67]">Buyer Platform</Link>
+  <Link to="/seller" className="hover:text-[#a58c67]">Seller Platform</Link>
 </div>
 
         {/* Mobile Toggle & Action */}
@@ -149,8 +149,8 @@ export default function Header() {
               )}
             </div>
 
-            <Link to="/buyer" onClick={() => setIsMobileMenuOpen(false)} className="py-3 border-b">BUYER’S PLATFORM</Link>
-<Link to="/seller" onClick={() => setIsMobileMenuOpen(false)} className="py-3 border-b">SELLER’S PLATFORM</Link>
+            <Link to="/buyer" onClick={() => setIsMobileMenuOpen(false)} className="py-3 border-b">Buyer Platform</Link>
+<Link to="/seller" onClick={() => setIsMobileMenuOpen(false)} className="py-3 border-b">Seller Platform</Link>
             <Link to="/trade-enquiry" onClick={() => setIsMobileMenuOpen(false)} className="bg-[#a58c67] text-white p-4 rounded-xl text-center mt-6 text-sm shadow-lg shadow-pink-100">
               TRADE ENQUIRY
             </Link>
