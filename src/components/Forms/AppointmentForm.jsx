@@ -12,7 +12,7 @@ export const AppointmentForm = () => {
     <div className="flex flex-col gap-2">
       <label className="text-sm font-extrabold text-gray-600 uppercase  ml-1">{label}</label>
       <div className="relative">
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-pink-400">
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a58c67]">
           {Icon && <Icon size={16} />}
         </div>
         <input

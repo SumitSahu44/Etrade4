@@ -13,10 +13,9 @@ export const Quotation = () => {
           {/* Left Side: Info */}
           <div className="lg:w-1/3">
             <div className="lg:sticky lg:top-32 text-center lg:text-left">
-              <span className="text-[#a58c67] font-black text-xs uppercase tracking-[0.4em]">Official e-Form</span>
-              <h2 className="text-4xl font-black text-[#4A4A4A] mt-2 leading-tight uppercase">
+            <h2 className="text-4xl font-black text-[#4A4A4A] mt-2 leading-tight uppercase">
                 Request an <br />
-                <span className="text-[#a58c67] normal-case italic">e-Quotation</span>
+                <span className="text-[#a58c67] normal-case">e-Quotation</span>
               </h2>
               <p className="mt-6 text-gray-500 text-sm leading-loose font-medium">
                 Submit your requirements to receive a professional quotation for finished or raw textile products. Our trade desk processes all requests within 24 business hours.
