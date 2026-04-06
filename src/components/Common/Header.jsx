@@ -50,10 +50,10 @@ export default function Header() {
   <div className="flex flex-col leading-tight">
     
     {/* Main Brand (2 Line Structured) */}
-    <h1 className="flex flex-col text-[13px] md:text-[15px] lg:text-[17px] font-extrabold tracking-tight text-[#222] group-hover:text-[#a58c67] transition-colors">
+    <h1 className="flex flex-col text-[13px] md:text-[15px] lg:text-[17px] font-extrabold tracking-tight text-[#222] transition-colors">
       
       {/* Line 1 */}
-      <span className='font-bold'>
+      <span className='font-[1000]'>
         PAREKH <span className="text-[#a58c67]">e-TRADE</span>
       </span>
 
